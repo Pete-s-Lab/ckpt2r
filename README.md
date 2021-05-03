@@ -1,7 +1,7 @@
 # checkpoint_importer_for_R
-An R-script [1] that imports landmarks from Stratovan Checkpoint files (*.ckpt) [2] so that the Export-step within Checkpoint can be skipped.
+An R-function [1] that imports landmarks from Stratovan Checkpoint files (*.ckpt) [2] so that the Export-step within Checkpoint can be skipped.
 
-Work in progress: Within the next few days, the script will be changed so it is more user-friendly for the public.
+Please refer to the checkpoint.importer.Rd.pdf file for information on how to use this function.
 
 Please cite the following paper when you use this macro:
 
