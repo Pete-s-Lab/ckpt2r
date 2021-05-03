@@ -1,15 +1,12 @@
-
-get.checkpoint.LMs(folder = "Z:/_SCRIPTS/R/Peter/checkpoint_LMs/all_Checkpoint_files/test/")
-
-get.checkpoint.LMs <- function(folder, keep.missing = T){
+read.checkpoint <- function(folder, keep.missing = T){
   
   file.list <- list.files(folder, pattern = "ckpt", full.names = T)
   
   # create list that stores dataframes of the LM names and coordinats
-  landmarkset_list <- list()
+  landmark_list <- list()
   
-  # set landmarkset_list_counter to 0
-  landmarkset_list_counter = 0
+  # set landmark_list_counter to 0
+  landmark_list_counter = 0
   
   for(f in 1:length(file.list)){ #length(file.list)
     
@@ -33,7 +30,7 @@ get.checkpoint.LMs <- function(folder, keep.missing = T){
         print(paste0("Adding ", no.of.LMs, " landmarks from ", curr.specimen))
         
         # increase counter value
-        landmarkset_list_counter = landmarkset_list_counter+1
+        landmark_list_counter = landmark_list_counter+1
         
         # find lines with landmark information
         for(l in 1:length(lines)){
@@ -163,12 +160,12 @@ get.checkpoint.LMs <- function(folder, keep.missing = T){
           present.df <- present.df[present.df$defined!="M",]
         }
         
-        # convert LM names and coordinates into dataframe and store as list element within landmarkset_list at index landmarkset_list_counter
-        landmarkset_list[[landmarkset_list_counter]] <- present.df
+        # convert LM names and coordinates into dataframe and store as list element within landmark_list at index landmark_list_counter
+        landmark_list[[landmark_list_counter]] <- present.df
         
       } else {message(paste0("!!! No landmarks found in ", curr.specimen, "...  !!!"))}
     } else {message(paste0("!!! No landmarks found in ", curr.specimen, "...  !!!"))}
   }
   closeAllConnections()
-  return(landmarkset_list)
+  return(landmark_list)
 }
