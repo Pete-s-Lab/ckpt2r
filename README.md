@@ -5,7 +5,7 @@ Please refer to the checkpoint.importer.Rd.pdf file for information on how to us
 
 Please cite the following paper when you use this macro:
 
-Rühr et al. (in rev.): Juvenile ecology drives adult morphology in two insect orders.
+Rühr et al. (2021): Juvenile ecology drives adult morphology in two insect orders. Proceedings of the Royal Society B 288: 20210616. https://doi.org/10.1098/rspb.2021.0616
 
 References:
 
