@@ -1,4 +1,7 @@
 # checkpoint_importer_for_R
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5482977.svg)](https://doi.org/10.5281/zenodo.5482977)
+
 An R-function [1] that imports landmarks from Stratovan Checkpoint files (*.ckpt) [2] so that the Export-step within Checkpoint can be skipped.
 
 Please refer to the checkpoint.importer.Rd.pdf file for information on how to use this function.
