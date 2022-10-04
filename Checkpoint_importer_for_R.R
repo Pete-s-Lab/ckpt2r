@@ -1,3 +1,5 @@
+# v.1-1-0
+
 # read Checkpoint files from folder
 #   keep.missing = FALSE will remove the landmarks marked as missing within Checkpoint,
 #   no matter if they are defined or not (i.e. no matter if there are coordinate values present)
