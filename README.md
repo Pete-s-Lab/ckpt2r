@@ -135,9 +135,9 @@ plot(pca.results.uncorr, pch = 16)
 ```
 
 # History
-* v.1-1-0
+* v.1-1-0 (2022-10-04)
   * added `array.2D.from.LM.list()` (after request from Christy Anna Hipsley)
   * added example R code to Readme file
-* v.1-0-0
+* v.1-0-0 (2021)
   * [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5482977.svg)](https://doi.org/10.5281/zenodo.5482977)
   * first version that came with the paper
