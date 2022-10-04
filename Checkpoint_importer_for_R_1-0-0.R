@@ -1,4 +1,7 @@
-read.checkpoint <- function(folder, keep.missing = T){
+# read Checkpoint files from folder
+#   keep.missing = FALSE will remove the landmarks marked as missing within Checkpoint,
+#   no matter if they are defined or not (i.e. no matter if there are coordinate values present)
+read.checkpoint <- function(folder, keep.missing = TRUE){
   
   file.list <- list.files(folder, pattern = "ckpt", full.names = T)
   
@@ -154,7 +157,7 @@ read.checkpoint <- function(folder, keep.missing = T){
         
         present.df$file <- curr.specimen
         
-        if(keep.missing == F){
+        if(keep.missing == FALSE){
           no.LM.M <- sum(present.df$defined=="M")
           print(paste0("Removing ", no.LM.M, " landmarks defined as missing from ", curr.specimen, "..."))
           present.df <- present.df[present.df$defined!="M",]
@@ -168,4 +171,104 @@ read.checkpoint <- function(folder, keep.missing = T){
   }
   closeAllConnections()
   return(landmark_list)
+}
+ 
+ 
+# create array.2D from a set of landmarks that were loaded with read.checkpoint()
+#   remove_NAs = TRUE will remove landmarks that are missing in at least one specimen form the whole dataset
+#   verbose = TRUE will inform the user if and which landmarks have been removed in case remove_NAs = TRUE
+array.2D.from.LM.list <- function(LM.list,
+                                  remove_NAs = FALSE,
+                                  verbose = TRUE){
+  # show progress percentage
+  show.progress <- function(current, end){
+    cat("\r", paste0(round(current/end*100,2), "%..."))
+  }
+  
+  i=1
+  for(i in 1:length(LM.list)){
+    curr_specimen_name <- LM.list[[i]]$file[1]
+    names(LM.list)[i] <- curr_specimen_name
+  }
+  
+  # get all specimen names
+  specimen_names <- names(LM.list)
+  
+  # find all landmark names that are used in all files (in case different files have different landmarks)
+  LM_names <- c()
+  s=1
+  for(s in 1:length(LM.list)){
+    curr_LM_names <- LM.list[[s]]$LM
+    LM_names <- unique(c(LM_names, curr_LM_names))
+    if(s == length(LM.list)){
+      LM_names <- gsub("\"", "", LM_names)
+    }
+  }
+  
+  # create column names ( , LM1_x, LM1_y, LM1_z, ...) for horizontal 2D array
+  k=1
+  for(k in 1:length(LM_names)){
+    if (k==1){
+      column_names <- c("specimen")
+    }
+    column_names <- c(column_names,
+                      paste0(LM_names[k],"_X"),
+                      paste0(LM_names[k],"_Y"),
+                      paste0(LM_names[k],"_Z"))
+  }
+  
+  ### create array_2D and add landmark data
+  array_2D <- NULL
+  l=1
+  for(l in 1:length(specimen_names)){
+    if(l==1){
+      # create 2D array
+      array_2D <- setNames(data.frame(matrix(ncol = length(column_names), nrow = length(specimen_names))), column_names)
+      row.names(array_2D) <- specimen_names
+      array_2D$specimen <- specimen_names
+    }
+    
+    e=1
+    for(e in 1:nrow(LM.list[[l]])){
+      # get landmark name and add X,Y,Z to separate the three coordinates of each line in the list of landmark data.frames
+      curr_landmark_X <- paste0(gsub('\"', "", LM.list[[l]]$LM[e]),"_X")
+      curr_landmark_Y <- paste0(gsub('\"', "", LM.list[[l]]$LM[e]),"_Y")
+      curr_landmark_Z <- paste0(gsub('\"', "", LM.list[[l]]$LM[e]),"_Z")
+      
+      # get the column number that matches the current landmark name for each coordinate
+      current_column_X <- match(curr_landmark_X, colnames(array_2D))
+      current_column_Y <- match(curr_landmark_Y, colnames(array_2D))
+      current_column_Z <- match(curr_landmark_Z, colnames(array_2D))
+      
+      # add the coordinate value into these column numbers at the current line number (1=X, 2=Y, 3=Z)
+      array_2D[l,current_column_X] <- LM.list[[l]]$X[e]
+      array_2D[l,current_column_Y] <- LM.list[[l]]$Y[e]
+      array_2D[l,current_column_Z] <- LM.list[[l]]$Z[e]
+    }
+    show.progress(l, length(LM.list))
+  }
+  
+  # remove specimen column (info is in rownames)
+  array_2D$specimen <- NULL
+  
+  if(remove_NAs == TRUE){
+    colnames_before <- gsub("_X$", "", colnames(array_2D))
+    colnames_before <- gsub("_Y$", "", colnames_before)
+    colnames_before <- unique(gsub("_Z$", "", colnames_before))
+    array_2D <- array_2D[ , colSums(is.na(array_2D)) == 0]
+    colnames_after <- gsub("_X$", "", colnames(array_2D))
+    colnames_after <- gsub("_Y$", "", colnames_after)
+    colnames_after <- unique(gsub("_Z$", "", colnames_after))
+    LMs_removed <- setdiff(colnames_before, colnames_after)
+    if(verbose == TRUE){
+      if(length(LMs_removed) > 0){
+        message("Removed the following ",  length(LMs_removed), " landmarks:\n", 
+                paste0(LMs_removed, "; "))
+      } else if(length(LMs_removed) == 0){
+        message("No missing landmark data detected.")
+      }
+    }
+  }
+  
+  return(array_2D)
 }
