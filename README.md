@@ -32,37 +32,37 @@ print(LM.list)
 # should return something like this:
 [[1]]
     defined          X        Y         Z                      LM          file
-1         M 1121.70068 721.9629  444.7175         frontS_X_coronS 0010_xxx_head
-2         N  616.11871 531.3812  607.5993           C_of_clyplbrS 0010_xxx_head
-3         N  440.10043 498.3546  611.0026            lat_clyplbrS 0010_xxx_head
-4         N  608.94190 385.3711  426.4555             "C_lbr-tip" 0010_xxx_head
-5         N  598.14355 599.1656  856.7567             C_of_epistS 0010_xxx_head
-6         N  426.96515 557.9075  826.2263                 atp_med 0010_xxx_head
-7         N  302.96197 457.7172  814.3900                 atp_lat 0010_xxx_head
-8         N  363.25909 493.5258  793.6968                C_of_atp 0010_xxx_head
-9         N  466.39160 396.7891  888.8391        ata_at_corpotent 0010_xxx_head
-10        M 1118.57446 719.9429  412.1278             dta_at_head 0010_xxx_head
-11        M 1102.92712 718.6509  381.6300              dta_on_ata 0010_xxx_head
+1         M 1121.70068 721.9629  444.7175         frontS_X_coronS 0001_xxx_head
+2         N  616.11871 531.3812  607.5993           C_of_clyplbrS 0001_xxx_head
+3         N  440.10043 498.3546  611.0026            lat_clyplbrS 0001_xxx_head
+4         N  608.94190 385.3711  426.4555             "C_lbr-tip" 0001_xxx_head
+5         N  598.14355 599.1656  856.7567             C_of_epistS 0001_xxx_head
+6         N  426.96515 557.9075  826.2263                 atp_med 0001_xxx_head
+7         N  302.96197 457.7172  814.3900                 atp_lat 0001_xxx_head
+8         N  363.25909 493.5258  793.6968                C_of_atp 0001_xxx_head
+9         N  466.39160 396.7891  888.8391        ata_at_corpotent 0001_xxx_head
+10        M 1118.57446 719.9429  412.1278             dta_at_head 0001_xxx_head
+11        M 1102.92712 718.6509  381.6300              dta_on_ata 0001_xxx_head
 [...]
-115       N  298.52539 436.7891  754.3361           md3_insertion 0010_xxx_head
+115       N  298.52539 436.7891  754.3361           md3_insertion 0001_xxx_head
 
 [...]
 
 [[219]]
     defined          X         Y         Z                      LM          file
-1         M 1314.68872 611.63977  430.6558         frontS_X_coronS 0009_xxx_head
-2         N  598.62726 577.49445  355.6156           C_of_clyplbrS 0009_xxx_head
-3         N  483.53073 546.49750  331.5674            lat_clyplbrS 0009_xxx_head
-4         N  620.67725 557.91650  209.7814             "C_lbr-tip" 0009_xxx_head
-5         N  566.06134 563.62402  511.8367             C_of_epistS 0009_xxx_head
-6         N  419.86118 527.37500  459.2769                 atp_med 0009_xxx_head
-7         N  292.12070 420.66412  497.9028                 atp_lat 0009_xxx_head
-8         N  373.44629 474.37500  454.4275                C_of_atp 0009_xxx_head
-9         N  453.11362 402.37500  523.0107        ata_at_corpotent 0009_xxx_head
-10        M 1306.34668 582.40894  427.3746             dta_at_head 0009_xxx_head
-11        M 1308.07910 597.16773  427.5869              dta_on_ata 0009_xxx_head
+1         M 1314.68872 611.63977  430.6558         frontS_X_coronS 0219_xxx_head
+2         N  598.62726 577.49445  355.6156           C_of_clyplbrS 0219_xxx_head
+3         N  483.53073 546.49750  331.5674            lat_clyplbrS 0219_xxx_head
+4         N  620.67725 557.91650  209.7814             "C_lbr-tip" 0219_xxx_head
+5         N  566.06134 563.62402  511.8367             C_of_epistS 0219_xxx_head
+6         N  419.86118 527.37500  459.2769                 atp_med 0219_xxx_head
+7         N  292.12070 420.66412  497.9028                 atp_lat 0219_xxx_head
+8         N  373.44629 474.37500  454.4275                C_of_atp 0219_xxx_head
+9         N  453.11362 402.37500  523.0107        ata_at_corpotent 0219_xxx_head
+10        M 1306.34668 582.40894  427.3746             dta_at_head 0219_xxx_head
+11        M 1308.07910 597.16773  427.5869              dta_on_ata 0219_xxx_head
 [...]
-115       N  358.25000 455.21838  409.8817           md3_insertion 0009_xxx_head
+115       N  358.25000 455.21838  409.8817           md3_insertion 0219_xxx_head
  
 
 # convert LM.list to 2D array
