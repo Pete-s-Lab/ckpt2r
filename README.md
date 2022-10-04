@@ -136,7 +136,7 @@ plot(pca.results.uncorr, pch = 16)
 
 # History
 * v.1-1-0
-  * added `array.2D.from.LM.list()` (inspired by Dr. Christy Anna Hipsley, University of Copenhagen)
+  * added `array.2D.from.LM.list()` (after request from Christy Anna Hipsley)
   * added example R code to Readme file
 * v.1-0-0
   * [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5482977.svg)](https://doi.org/10.5281/zenodo.5482977)
