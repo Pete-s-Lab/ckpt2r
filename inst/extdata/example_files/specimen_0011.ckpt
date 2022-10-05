@@ -1,0 +1,126 @@
+Version 6
+Stratovan Checkpoint (TM)
+
+[Specimen Information]
+Name: file_neame, .ckpt
+ID: specimen_ID
+Birthdate: 
+Sex: 
+
+[Specimen Study]
+StudyInstanceUID: 
+StudyID: 
+StudyDate: 
+StudyTime: 
+StudyDescription: 
+
+[Specimen Series]
+SeriesInstanceUID: 
+SeriesNumber: 
+SeriesDate: 
+SeriesTime: 
+SeriesModality: 
+SeriesProtocol: 
+SeriesPart: 
+SeriesDescription: 
+
+[Specimen File(s)]
+NumberOfFolders: 1
+Folder: specimen_ID
+Files: "AV00011_CASENT0741292_Eciton bruchellii_head" 
+
+[Surface Information]
+NumberOfSurfaces: 1
+0: -25 "" 200 200 200
+
+[Templates]
+NumberOfTemplates: 1
+0 B9F29465-E9AE-4522-A530-DA6FF24B3F74 0
+ 
+[Landmarks]
+NumberOfPoints: 23
+Units: um
+0: 0 N 0x8 1388.926270 1113.633179 917.111938 0.785005 0.374738 -0.493295 "eye_tip_L" 0 1
+1: 0 N 0x8 247.882080 1067.569580 970.259033 -0.658623 0.366551 -0.657157 "eye_tip_R" 0 2
+2: 0 N 0x8 838.382568 1658.042480 1775.836670 0.051243 0.990067 -0.130928 "clypeus_edge_C" 0 3
+3: 0 N 0x8 859.958313 1273.949097 1910.565918 0.003302 -0.901183 0.433427 "labrum_C" 0 4
+4: 0 N 0x8 1391.370483 1238.432495 1662.749023 0.964858 0.012688 0.262465 "mandible_post_cond_dent_L" 0 5
+5: 0 N 0x8 310.820221 1211.551025 1723.558350 0.296948 0.940056 0.167680 "mandible_post_cond_dent_R" 0 6
+6: 0 N 0x8 969.676331 1601.674561 1397.486938 -0.012487 0.865608 -0.500567 "antenna_prox_L" 0 7
+7: 0 N 0x8 679.496460 1584.626953 1418.866089 -0.978960 0.115365 0.168312 "antenna_prox_R" 0 8
+8: 0 N 0x8 867.991516 1054.974854 1922.808105 0.002483 0.956731 -0.290965 "postocciput_ven_C" 0 9
+9: 0 N 0x8 802.801208 578.336426 616.766846 0.016376 -0.319765 -0.947355 "head_post_C" 0 10
+10: 0 N 0x8 841.131104 1491.608521 1737.861084 -0.079445 0.923354 0.375642 "clypeo_labral_sut_C" 0 11
+11: 0 N 0x8 1146.821289 1463.703247 1736.472168 -0.104298 0.708120 0.698347 "clypeo_labral_sut_L" 0 12
+12: 0 N 0x8 532.965515 1438.892700 1746.514404 -0.842005 0.482553 0.241184 "clypeo_labral_sut_R" 0 13
+13: 0 N 0x8 492.284363 1536.250000 1527.375000 -0.863423 0.421724 0.276856 "anterior_tent_pit_R" 0 14
+14: 0 N 0x8 1186.021484 1546.734375 1491.539063 0.036536 0.999110 0.021072 "anterior_tent_pit_L" 0 15
+15: 0 N 0x8 715.037292 606.773438 1038.718750 -0.431043 0.889582 0.151146 "posterior_tent_pit_R" 0 16
+16: 0 N 0x8 960.466919 607.312500 1027.273438 0.996822 -0.076096 -0.023577 "posterior_tent_pit_L" 0 17
+17: 0 N 0x8 839.888916 736.397461 1023.953125 0.385560 0.442186 -0.809824 "posterior_tentorial_bridge_ant_C" 0 18
+18: 0 N 0x8 969.467468 1434.218262 2526.129150 -0.670060 -0.387368 0.633218 "mandible_dist_inc_L" 0 19
+19: 0 N 0x8 922.098267 1343.543457 2554.824951 0.479577 -0.301711 0.824000 "mandible_dist_inc_R" 0 20
+20: 0 N 0x8 850.000000 478.316467 1091.708008 0.094845 0.282257 0.954639 "foramen_vent_C" -1 -1
+21: 0 N 0x8 842.062500 426.559387 896.605469 0.490265 -0.515004 0.703144 "foramen_dors_C" -1 -1
+22: 0 N 0x8 841.022705 665.734375 1014.523438 -0.000478 -0.871739 0.489970 "posterior_tentorial_bridge_post_C" -1 -1
+
+[SinglePoints]
+NumberOfSinglePoints: 23
+0: 0 0 1
+1: 1 0 2
+2: 2 0 3
+3: 3 0 4
+4: 4 0 5
+5: 5 0 6
+6: 6 0 7
+7: 7 0 8
+8: 8 0 9
+9: 9 0 10
+10: 10 0 11
+11: 11 0 12
+12: 12 0 13
+13: 13 0 14
+14: 14 0 15
+15: 15 0 16
+16: 16 0 17
+17: 17 0 18
+18: 18 0 19
+19: 19 0 20
+20: 20 -1 -1
+21: 21 -1 -1
+22: 22 -1 -1
+
+[Curves]
+NumberOfCurves: 0
+
+[Patches]
+NumberOfPatches: 0
+
+[Joints]
+NumberOfJoints: 0
+
+[Lengths]
+NumberOfLengths: 0
+
+[Lines]
+NumberOfLines: 0
+
+[Angles]
+NumberOfAngles: 0
+
+[Planes]
+NumberOfPlanes: 0
+
+[Image Stack]
+Units: um
+Spacing: 3.933100 3.933100 3.933100
+NumberOfFiles: 1
+Files: "AV00011_CASENT0741292_Eciton bruchellii_head_sc68.tif" 
+
+[Contrast and Brightness]
+Width: 376
+Level: 30
+
+[Landmark Size]
+Size: 2
+

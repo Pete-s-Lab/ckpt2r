@@ -1,0 +1,122 @@
+Version 6
+Stratovan Checkpoint (TM)
+
+[Specimen Information]
+Name: file_neame, .ckpt
+ID: specimen_ID
+Birthdate: 
+Sex: 
+
+[Specimen Study]
+StudyInstanceUID: 
+StudyID: 
+StudyDate: 
+StudyTime: 
+StudyDescription: 
+
+[Specimen Series]
+SeriesInstanceUID: 
+SeriesNumber: 
+SeriesDate: 
+SeriesTime: 
+SeriesModality: 
+SeriesProtocol: 
+SeriesPart: 
+SeriesDescription: 
+
+[Specimen File(s)]
+NumberOfFolders: 1
+Folder: specimen_ID
+Files: "AV00015_CASENT0744002_Acanthomyrmex glabfemoralis_head" 
+
+[Surface Information]
+NumberOfSurfaces: 1
+0: -81 "" 200 200 200
+
+[Templates]
+NumberOfTemplates: 1
+0 F1ECC42E-A7F2-4E35-AC7F-3946C4D0B674 0
+ 
+[Landmarks]
+NumberOfPoints: 21
+Units: um
+0: 0 N 0x48 1394.138062 692.253174 824.600464 0.912390 -0.158667 0.377319 "eye_tip_L" 0 1
+1: 0 N 0x48 102.167908 708.848145 748.770569 -0.864401 0.496227 -0.081051 "eye_tip_R" 0 2
+2: 0 N 0x48 688.541260 0.882294 1506.665894 -0.599826 0.338990 0.724773 "mandible_dist_inc_L" 0 3
+3: 0 N 0x48 646.384521 0.960320 1548.186768 0.519009 -0.282393 0.806774 "mandible_dist_inc_R" 0 4
+4: 0 N 0x48 780.589966 957.800903 485.954254 0.530930 0.764137 -0.366345 "head_post_C" 0 5
+5: 0 N 0x48 721.870605 596.171265 1353.752441 -0.087420 -0.452264 0.887589 "clypeus_edge_C" 0 6
+6: 0 N 0x48 721.929749 509.415771 1241.845215 0.132717 0.351508 0.926730 "clypeo_labral_sut_C" 0 7
+7: 0 N 0x48 928.710938 510.567352 1233.866211 -0.492296 0.305019 -0.815235 "clypeo_labral_sut_L" 0 8
+8: 0 N 0x48 528.007813 512.517151 1217.478027 0.665350 -0.691924 -0.280269 "clypeo_labral_sut_R" 0 9
+9: 0 N 0x48 736.102844 285.840698 1015.433289 -0.031809 -0.905900 0.422296 "labrum_C" 0 10
+10: 0 N 0x48 1186.615234 412.493378 1063.219849 -0.171166 0.088581 0.981252 "mandible_post_cond_dent_L" 0 11
+11: 0 N 0x48 290.717926 414.713745 1010.433472 0.326230 -0.480158 0.814262 "mandible_post_cond_dent_R" 0 12
+12: 0 N 0x48 970.572144 627.466370 1300.312256 0.782256 -0.135054 0.608141 "antenna_prox_L" 0 13
+13: 0 N 0x48 475.025360 645.133911 1270.276855 -0.883772 -0.132553 0.448751 "antenna_prox_R" 0 14
+14: 0 N 0x48 731.515259 250.892761 912.137390 -0.080037 -0.510904 -0.855904 "postocciput_ven_C" 0 15
+15: 0 N 0x48 1017.851501 589.524414 1147.064209 0.000001 0.940259 0.340461 "anterior_tent_pit_L" 0 16
+16: 0 N 0x48 448.455078 594.314575 1124.663818 -0.306907 0.885280 0.349410 "anterior_tent_pit_R" 0 17
+17: 0 N 0x48 880.627136 781.820313 570.704468 -0.982744 -0.179742 0.043664 "posterior_tent_pit_L" 0 18
+18: 0 N 0x48 646.687073 781.820313 552.200928 0.992792 0.100718 -0.064967 "posterior_tent_pit_R" 0 19
+19: 0 N 0x48 760.926880 789.992188 653.864563 0.142596 0.962391 0.231237 "posterior_tentorial_bridge_ant_C" 0 20
+20: 0 N 0x48 762.341797 791.101563 615.583740 0.020320 0.391761 -0.919843 "posterior_tentorial_bridge_post_C" 0 21
+
+[SinglePoints]
+NumberOfSinglePoints: 21
+0: 0 0 1
+1: 1 0 2
+2: 2 0 3
+3: 3 0 4
+4: 4 0 5
+5: 5 0 6
+6: 6 0 7
+7: 7 0 8
+8: 8 0 9
+9: 9 0 10
+10: 10 0 11
+11: 11 0 12
+12: 12 0 13
+13: 13 0 14
+14: 14 0 15
+15: 15 0 16
+16: 16 0 17
+17: 17 0 18
+18: 18 0 19
+19: 19 0 20
+20: 20 0 21
+
+[Curves]
+NumberOfCurves: 0
+
+[Patches]
+NumberOfPatches: 0
+
+[Joints]
+NumberOfJoints: 0
+
+[Lengths]
+NumberOfLengths: 0
+
+[Lines]
+NumberOfLines: 0
+
+[Angles]
+NumberOfAngles: 0
+
+[Planes]
+NumberOfPlanes: 0
+
+[Image Stack]
+Units: um
+Spacing: 3.018100 3.018100 3.018100
+NumberOfFiles: 1
+Files: "AV00015_CASENT0744002_Acanthomyrmex glabfemoralis_head_sc61.tif" 
+
+[Contrast and Brightness]
+Width: 140
+Level: -24
+
+[Landmark Size]
+Size: 1
+

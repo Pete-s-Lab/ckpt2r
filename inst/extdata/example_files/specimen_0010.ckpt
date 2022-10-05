@@ -1,0 +1,122 @@
+Version 6
+Stratovan Checkpoint (TM)
+
+[Specimen Information]
+Name: file_neame, .ckpt
+ID: specimen_ID
+Birthdate: 
+Sex: 
+
+[Specimen Study]
+StudyInstanceUID: 
+StudyID: 
+StudyDate: 
+StudyTime: 
+StudyDescription: 
+
+[Specimen Series]
+SeriesInstanceUID: 
+SeriesNumber: 
+SeriesDate: 
+SeriesTime: 
+SeriesModality: 
+SeriesProtocol: 
+SeriesPart: 
+SeriesDescription: 
+
+[Specimen File(s)]
+NumberOfFolders: 1
+Folder: specimen_ID
+Files: "AV00010_CASENT0741290_Neivamyrmex nigrescens_head" 
+
+[Surface Information]
+NumberOfSurfaces: 1
+0: -42 "-42" 200 200 200
+
+[Templates]
+NumberOfTemplates: 1
+0 F1ECC42E-A7F2-4E35-AC7F-3946C4D0B674 0
+ 
+[Landmarks]
+NumberOfPoints: 21
+Units: um
+0: 0 N 0x48 353.874786 998.459900 736.025879 -0.134619 0.966380 -0.219060 "eye_tip_L" 0 1
+1: 0 N 0x48 840.346863 386.744446 868.272400 0.945906 -0.324088 0.015102 "eye_tip_R" 0 2
+2: 0 N 0x48 120.247604 155.424377 221.851074 -0.262951 -0.884675 0.384977 "mandible_dist_inc_L" 0 3
+3: 0 N 0x48 84.706970 208.808990 259.431885 -0.921246 -0.199218 0.334094 "mandible_dist_inc_R" 0 4
+4: 0 N 0x48 599.671875 748.179688 1162.451538 0.036848 0.380013 0.924247 "head_post_C" 0 5
+5: 0 N 0x48 418.599640 442.443573 274.449158 0.102431 -0.150695 -0.983259 "clypeus_edge_C" 0 6
+6: 0 N 0x48 394.246796 436.905243 338.558258 -0.333563 -0.894695 -0.297080 "clypeo_labral_sut_C" 0 7
+7: 0 N 0x48 288.125000 562.570313 316.408203 0.446305 0.553820 -0.702919 "clypeo_labral_sut_L" 0 8
+8: 0 N 0x48 495.015625 302.351563 377.490234 0.939553 0.311722 0.141668 "clypeo_labral_sut_R" 0 9
+9: 0 N 0x48 267.573914 345.691620 416.647308 -0.829344 -0.338647 0.444418 "labrum_C" 0 10
+10: 0 N 0x48 71.014618 701.600159 412.140930 0.321491 -0.523112 -0.789302 "mandible_post_cond_dent_L" 0 11
+11: 0 N 0x48 567.634033 84.667450 541.926392 -0.422350 0.215247 -0.880505 "mandible_post_cond_dent_R" 0 12
+12: 0 N 0x48 485.182312 601.408325 291.255890 -0.316339 0.690575 -0.650412 "antenna_prox_L" 0 13
+13: 0 N 0x48 587.054565 471.534088 318.490692 0.601508 -0.683617 -0.413347 "antenna_prox_R" 0 14
+14: 0 N 0x48 178.985962 311.266876 608.431213 -0.798185 -0.600667 -0.045820 "postocciput_ven_C" 0 15
+15: 0 N 0x48 366.187500 693.648438 249.009338 0.866223 0.486388 0.114389 "anterior_tent_pit_L" 0 16
+16: 0 N 0x48 661.164063 330.597656 327.126465 0.501754 0.719830 0.479675 "anterior_tent_pit_R" 0 17
+17: 0 N 0x48 366.812500 680.785156 997.797363 0.020350 -0.996738 0.078096 "posterior_tent_pit_L" 0 18
+18: 0 N 0x48 493.171875 526.894531 1032.737305 -0.258377 0.948042 0.185629 "posterior_tent_pit_R" 0 19
+19: 0 N 0x48 450.027344 600.507813 916.890625 0.278692 0.130451 -0.951479 "posterior_tentorial_bridge_ant_C" 0 20
+20: 0 N 0x48 450.414063 607.156250 943.996094 -0.102577 0.061049 0.992850 "posterior_tentorial_bridge_post_C" 0 21
+
+[SinglePoints]
+NumberOfSinglePoints: 21
+0: 0 0 1
+1: 1 0 2
+2: 2 0 3
+3: 3 0 4
+4: 4 0 5
+5: 5 0 6
+6: 6 0 7
+7: 7 0 8
+8: 8 0 9
+9: 9 0 10
+10: 10 0 11
+11: 11 0 12
+12: 12 0 13
+13: 13 0 14
+14: 14 0 15
+15: 15 0 16
+16: 16 0 17
+17: 17 0 18
+18: 18 0 19
+19: 19 0 20
+20: 20 0 21
+
+[Curves]
+NumberOfCurves: 0
+
+[Patches]
+NumberOfPatches: 0
+
+[Joints]
+NumberOfJoints: 0
+
+[Lengths]
+NumberOfLengths: 0
+
+[Lines]
+NumberOfLines: 0
+
+[Angles]
+NumberOfAngles: 0
+
+[Planes]
+NumberOfPlanes: 0
+
+[Image Stack]
+Units: um
+Spacing: 2.397100 2.397100 2.397100
+NumberOfFiles: 1
+Files: "AV00010_CASENT0741290_Neivamyrmex nigrescens_head_sc65.tif" 
+
+[Contrast and Brightness]
+Width: 393
+Level: 68
+
+[Landmark Size]
+Size: 1
+

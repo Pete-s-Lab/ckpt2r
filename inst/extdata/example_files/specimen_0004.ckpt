@@ -1,0 +1,122 @@
+Version 6
+Stratovan Checkpoint (TM)
+
+[Specimen Information]
+Name: file_neame, .ckpt
+ID: specimen_ID
+Birthdate: 
+Sex: 
+
+[Specimen Study]
+StudyInstanceUID: 
+StudyID: 
+StudyDate: 
+StudyTime: 
+StudyDescription: 
+
+[Specimen Series]
+SeriesInstanceUID: 
+SeriesNumber: 
+SeriesDate: 
+SeriesTime: 
+SeriesModality: 
+SeriesProtocol: 
+SeriesPart: 
+SeriesDescription: 
+
+[Specimen File(s)]
+NumberOfFolders: 1
+Folder: specimen_ID
+Files: "AV00004_CASENT0741275_Camponotus vicinus_head" 
+
+[Surface Information]
+NumberOfSurfaces: 1
+0: -27 "" 200 200 200
+
+[Templates]
+NumberOfTemplates: 1
+0 F1ECC42E-A7F2-4E35-AC7F-3946C4D0B674 0
+ 
+[Landmarks]
+NumberOfPoints: 21
+Units: um
+0: 0 N 0x48 1470.336182 376.692322 1345.542725 0.689856 -0.719723 0.078087 "eye_tip_L" 0 1
+1: 0 N 0x48 94.131714 439.520813 1390.886475 -0.810552 -0.585574 0.010385 "eye_tip_R" 0 2
+2: 0 N 0x48 548.882629 1438.551880 374.891968 -0.727767 0.685531 0.020095 "mandible_dist_inc_L" 0 3
+3: 0 N 0x48 1015.083618 1411.908813 212.877594 0.747772 0.539252 -0.387355 "mandible_dist_inc_R" 0 4
+4: 0 N 0x48 802.281677 448.126709 2092.163330 -0.001278 -0.359628 0.933095 "head_post_C" 0 5
+5: 0 N 0x48 781.411499 969.536560 204.950439 0.038069 0.188498 -0.981335 "clypeus_edge_C" 0 6
+6: 0 N 0x48 773.711914 983.734375 390.683594 -0.014156 0.981834 -0.189214 "clypeo_labral_sut_C" 0 7
+7: 0 N 0x48 1089.958008 972.703125 431.876953 0.665116 0.694599 -0.274141 "clypeo_labral_sut_L" 0 8
+8: 0 N 0x48 475.386719 1003.078125 427.843750 -0.937095 0.252103 0.241449 "clypeo_labral_sut_R" 0 9
+9: 0 N 0x48 786.795471 1147.340576 541.166687 -0.219892 0.922503 -0.317233 "labrum_C" 0 10
+10: 0 N 0x48 1398.879272 1229.428711 601.027954 -0.654456 0.286910 -0.699550 "mandible_post_cond_dent_L" 0 11
+11: 0 N 0x48 206.087677 1275.989014 617.668274 0.810637 0.090074 -0.578580 "mandible_post_cond_dent_R" 0 12
+12: 0 N 0x48 990.607544 320.606934 705.016052 0.036331 -0.578572 -0.814822 "antenna_prox_L" 0 13
+13: 0 N 0x48 529.118225 339.332336 713.146606 -0.136635 -0.596146 -0.791164 "antenna_prox_R" 0 14
+14: 0 N 0x48 816.540771 1396.076904 1027.444092 0.046643 0.893288 0.447058 "postocciput_ven_C" 0 15
+15: 0 N 0x48 1186.306641 820.828125 523.749023 -0.902341 -0.174563 -0.394092 "anterior_tent_pit_L" 0 16
+16: 0 N 0x48 372.589844 856.359375 534.874023 -0.974566 0.124621 0.186254 "anterior_tent_pit_R" 0 17
+17: 0 N 0x48 968.405273 688.359375 1982.821289 -0.865359 -0.066462 0.496726 "posterior_tent_pit_L" 0 18
+18: 0 N 0x48 664.458984 703.328125 1990.107422 0.999434 -0.021639 0.025759 "posterior_tent_pit_R" 0 19
+19: 0 N 0x48 805.093750 597.576660 1747.046143 -0.430959 0.894431 -0.119451 "posterior_tentorial_bridge_ant_C" 0 20
+20: 0 N 0x48 812.092773 633.421875 1835.662109 0.136254 0.965805 0.220580 "posterior_tentorial_bridge_post_C" 0 21
+
+[SinglePoints]
+NumberOfSinglePoints: 21
+0: 0 0 1
+1: 1 0 2
+2: 2 0 3
+3: 3 0 4
+4: 4 0 5
+5: 5 0 6
+6: 6 0 7
+7: 7 0 8
+8: 8 0 9
+9: 9 0 10
+10: 10 0 11
+11: 11 0 12
+12: 12 0 13
+13: 13 0 14
+14: 14 0 15
+15: 15 0 16
+16: 16 0 17
+17: 17 0 18
+18: 18 0 19
+19: 19 0 20
+20: 20 0 21
+
+[Curves]
+NumberOfCurves: 0
+
+[Patches]
+NumberOfPatches: 0
+
+[Joints]
+NumberOfJoints: 0
+
+[Lengths]
+NumberOfLengths: 0
+
+[Lines]
+NumberOfLines: 0
+
+[Angles]
+NumberOfAngles: 0
+
+[Planes]
+NumberOfPlanes: 0
+
+[Image Stack]
+Units: um
+Spacing: 3.629800 3.629800 3.629800
+NumberOfFiles: 1
+Files: "AV00004_CASENT0741275_Camponotus vicinus_head_sc62.tif" 
+
+[Contrast and Brightness]
+Width: 221
+Level: -36
+
+[Landmark Size]
+Size: 2
+

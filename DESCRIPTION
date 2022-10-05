@@ -1,0 +1,25 @@
+Package: ckpt2r
+Title: Checkpoint to R converter
+Description: Convert landmarks from Stratovan Checkpoint files (*.ckpt) [1] into R[2] so that the Export-step within Checkpoint can be skipped.
+Version: 1.0.16
+Date: 2022-06-22
+License: MIT + file LICENSE
+URL: https://github.com/Peter-T-Ruehr/chkpt2r
+BugReports: https://github.com/Peter-T-Ruehr/chkpt2r/issues
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Imports: 
+Depends: 
+    R (>= 4.0)
+VignetteBuilder: knitr
+Suggests: 
+	knitr,
+  rmarkdown,
+  testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Authors@R: 
+    person("Peter", "Rühr", , "peter.ruehr@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-2776-6172"))
+Maintainer: Peter T. Rühr <peter.ruehr@gmail.com>
+LazyData: true

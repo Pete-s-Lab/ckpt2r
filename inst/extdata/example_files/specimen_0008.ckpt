@@ -1,0 +1,122 @@
+Version 6
+Stratovan Checkpoint (TM)
+
+[Specimen Information]
+Name: file_neame, .ckpt
+ID: specimen_ID
+Birthdate: 
+Sex: 
+
+[Specimen Study]
+StudyInstanceUID: 
+StudyID: 
+StudyDate: 
+StudyTime: 
+StudyDescription: 
+
+[Specimen Series]
+SeriesInstanceUID: 
+SeriesNumber: 
+SeriesDate: 
+SeriesTime: 
+SeriesModality: 
+SeriesProtocol: 
+SeriesPart: 
+SeriesDescription: 
+
+[Specimen File(s)]
+NumberOfFolders: 1
+Folder: specimen_ID
+Files: "AV00008_CASENT0741288_Anoplolepis gracilipes_head" 
+
+[Surface Information]
+NumberOfSurfaces: 1
+0: -7 "" 200 200 200
+
+[Templates]
+NumberOfTemplates: 1
+0 F1ECC42E-A7F2-4E35-AC7F-3946C4D0B674 0
+ 
+[Landmarks]
+NumberOfPoints: 21
+Units: um
+0: 0 N 0x48 39.316650 592.718994 463.886902 -0.767520 0.635556 -0.083559 "eye_tip_L" -1 -1
+1: 0 N 0x48 690.779236 571.135132 617.624084 0.885299 0.456679 0.087697 "eye_tip_R" -1 -1
+2: 0 N 0x48 575.422607 78.679199 288.713196 0.910117 -0.412193 -0.042246 "mandible_dist_inc_L" -1 -1
+3: 0 N 0x48 359.047211 24.881378 108.627197 -0.663641 -0.474115 -0.578616 "mandible_dist_inc_R" -1 -1
+4: 0 N 0x48 284.557281 626.787964 898.843628 -0.147586 0.502928 0.851635 "head_post_C" -1 -1
+5: 0 N 0x48 443.168304 201.200729 144.880188 -0.043780 -0.603725 -0.795990 "clypeus_edge_C" -1 -1
+6: 0 N 0x48 426.269531 223.953781 220.868164 0.178798 0.328646 -0.927374 "clypeo_labral_sut_C" -1 -1
+7: 0 N 0x48 303.449219 213.633392 196.136719 0.126208 0.749717 0.649613 "clypeo_labral_sut_L" -1 -1
+8: 0 N 0x48 547.750000 218.363602 236.531250 -0.902495 -0.403145 -0.151582 "clypeo_labral_sut_R" -1 -1
+9: 0 N 0x48 438.691010 190.661163 151.411285 0.444046 0.242060 -0.862688 "labrum_C" -1 -1
+10: 0 N 0x48 145.659180 169.483841 321.623077 0.025960 -0.226821 -0.973590 "mandible_post_cond_dent_L" -1 -1
+11: 0 N 0x48 644.181152 163.161285 423.695984 -0.263498 -0.452496 -0.851949 "mandible_post_cond_dent_R" -1 -1
+12: 0 N 0x48 314.388672 515.483582 233.999725 0.683780 0.136549 -0.716798 "antenna_prox_L" -1 -1
+13: 0 N 0x48 535.055481 513.161316 279.314209 -0.264149 0.214647 -0.940294 "antenna_prox_R" -1 -1
+14: 0 N 0x48 360.912079 102.313019 533.807739 -0.364581 -0.738878 0.566692 "postocciput_ven_C" -1 -1
+15: 0 N 0x48 228.789063 305.710938 276.679688 0.738437 -0.398185 0.544205 "anterior_tent_pit_L" -1 -1
+16: 0 N 0x48 593.499023 298.757813 347.636719 0.825274 0.055184 0.562030 "anterior_tent_pit_R" -1 -1
+17: 0 N 0x48 362.693359 416.312500 848.464844 0.964333 0.168981 -0.203734 "posterior_tent_pit_R" -1 -1
+18: 0 N 0x48 223.887695 421.421875 826.132813 0.860553 -0.441686 0.253697 "posterior_tent_pit_L" -1 -1
+19: 0 N 0x48 313.457031 440.589661 746.594727 -0.104695 0.171637 -0.979581 "posterior_tentorial_bridge_ant_C" -1 -1
+20: 0 N 0x48 307.023438 434.373901 773.933594 0.110843 -0.565982 0.816932 "posterior_tentorial_bridge_post_C" -1 -1
+
+[SinglePoints]
+NumberOfSinglePoints: 21
+0: 0 0 1
+1: 1 0 2
+2: 2 0 3
+3: 3 0 4
+4: 4 0 5
+5: 5 0 6
+6: 6 0 7
+7: 7 0 8
+8: 8 0 9
+9: 9 0 10
+10: 10 0 11
+11: 11 0 12
+12: 12 0 13
+13: 13 0 14
+14: 14 0 15
+15: 15 0 16
+16: 16 0 17
+17: 17 0 18
+18: 18 0 19
+19: 19 0 20
+20: 20 0 21
+
+[Curves]
+NumberOfCurves: 0
+
+[Patches]
+NumberOfPatches: 0
+
+[Joints]
+NumberOfJoints: 0
+
+[Lengths]
+NumberOfLengths: 0
+
+[Lines]
+NumberOfLines: 0
+
+[Angles]
+NumberOfAngles: 0
+
+[Planes]
+NumberOfPlanes: 0
+
+[Image Stack]
+Units: um
+Spacing: 1.648500 1.648500 1.648500
+NumberOfFiles: 1
+Files: "AV00008_CASENT0741288_Anoplolepis gracilipes_head_sc61.tif" 
+
+[Contrast and Brightness]
+Width: 157
+Level: -25
+
+[Landmark Size]
+Size: 15
+

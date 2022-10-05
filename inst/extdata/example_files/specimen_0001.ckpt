@@ -1,0 +1,122 @@
+Version 6
+Stratovan Checkpoint (TM)
+
+[Specimen Information]
+Name: file_neame, .ckpt
+ID: specimen_ID
+Birthdate: 
+Sex: 
+
+[Specimen Study]
+StudyInstanceUID: 
+StudyID: 
+StudyDate: 
+StudyTime: 
+StudyDescription: 
+
+[Specimen Series]
+SeriesInstanceUID: 
+SeriesNumber: 
+SeriesDate: 
+SeriesTime: 
+SeriesModality: 
+SeriesProtocol: 
+SeriesPart: 
+SeriesDescription: 
+
+[Specimen File(s)]
+NumberOfFolders: 1
+Folder: specimen_ID
+Files: "AV00001_Camponotus_hyatti_head" 
+
+[Surface Information]
+NumberOfSurfaces: 1
+0: -41 "" 200 200 200
+
+[Templates]
+NumberOfTemplates: 1
+0 F1ECC42E-A7F2-4E35-AC7F-3946C4D0B674 0
+ 
+[Landmarks]
+NumberOfPoints: 21
+Units: um
+0: 0 N 0x48 1469.846313 390.145691 1028.751099 0.698689 -0.657508 -0.281988 "eye_tip_L" 0 1
+1: 0 N 0x48 127.459595 390.593414 1032.406006 -0.792710 -0.577146 -0.196246 "eye_tip_R" 0 2
+2: 0 N 0x48 750.351318 1312.242920 136.647705 -0.505111 0.843923 -0.180711 "mandible_dist_inc_L" 0 3
+3: 0 N 0x48 913.773682 1278.855713 199.969528 0.632209 0.756997 -0.165131 "mandible_dist_inc_R" 0 4
+4: 0 N 0x48 804.493652 292.447266 1638.265381 -0.015972 -0.408857 0.912459 "head_post_C" 0 5
+5: 0 N 0x48 803.862427 911.940247 250.924927 -0.060312 0.338919 -0.938880 "clypeus_edge_C" 0 6
+6: 0 N 0x48 803.176453 848.750000 331.011444 0.111953 -0.418188 -0.901435 "clypeo_labral_sut_C" 0 7
+7: 0 N 0x48 993.155396 883.750000 334.364014 0.514336 -0.130142 0.847657 "clypeo_labral_sut_L" 0 8
+8: 0 N 0x48 610.962524 891.750000 356.714447 0.534992 -0.818363 0.209919 "clypeo_labral_sut_R" 0 9
+9: 0 N 0x48 801.150391 1053.558105 294.082886 0.032433 0.984820 -0.170524 "labrum_C" 0 10
+10: 0 N 0x48 1246.715332 1138.951904 512.764099 -0.696172 0.189235 -0.692485 "mandible_post_cond_dent_L" 0 11
+11: 0 N 0x48 359.332062 1149.107666 509.951508 0.809245 0.185042 -0.557568 "mandible_post_cond_dent_R" 0 12
+12: 0 N 0x48 1007.698181 346.770294 535.291016 0.244603 -0.390572 -0.887481 "antenna_prox_L" 0 13
+13: 0 N 0x48 587.090942 346.563965 539.517029 -0.617211 -0.400429 -0.677280 "antenna_prox_R" 0 14
+14: 0 N 0x48 805.714355 1228.189453 872.159851 -0.006285 0.971472 0.237073 "postocciput_ven_C" 0 15
+15: 0 N 0x48 1091.075562 713.750000 402.124084 0.931060 0.205321 0.301613 "anterior_tent_pit_L" 0 16
+16: 0 N 0x48 503.755249 724.750000 389.814941 0.613193 -0.755168 -0.231766 "anterior_tent_pit_R" 0 17
+17: 0 N 0x48 897.646606 678.750000 1518.736084 -0.966200 0.253486 0.046934 "posterior_tent_pit_L" 0 18
+18: 0 N 0x48 691.908691 678.750000 1516.977539 0.982066 0.090459 0.165421 "posterior_tent_pit_R" 0 19
+19: 0 N 0x48 799.173767 618.750000 1342.891602 -0.039244 -0.104709 -0.993728 "posterior_tentorial_bridge_ant_C" 0 20
+20: 0 N 0x8 796.486938 618.750000 1437.962158 0.023394 0.700995 0.712782 "posterior_tentorial_bridge_post_C" 0 21
+
+[SinglePoints]
+NumberOfSinglePoints: 21
+0: 0 0 1
+1: 1 0 2
+2: 2 0 3
+3: 3 0 4
+4: 4 0 5
+5: 5 0 6
+6: 6 0 7
+7: 7 0 8
+8: 8 0 9
+9: 9 0 10
+10: 10 0 11
+11: 11 0 12
+12: 12 0 13
+13: 13 0 14
+14: 14 0 15
+15: 15 0 16
+16: 16 0 17
+17: 17 0 18
+18: 18 0 19
+19: 19 0 20
+20: 20 0 21
+
+[Curves]
+NumberOfCurves: 0
+
+[Patches]
+NumberOfPatches: 0
+
+[Joints]
+NumberOfJoints: 0
+
+[Lengths]
+NumberOfLengths: 0
+
+[Lines]
+NumberOfLines: 0
+
+[Angles]
+NumberOfAngles: 0
+
+[Planes]
+NumberOfPlanes: 0
+
+[Image Stack]
+Units: um
+Spacing: 3.245100 3.245100 3.245100
+NumberOfFiles: 1
+Files: "AV00001_Camponotus_hyatti_head_sc57.tif" 
+
+[Contrast and Brightness]
+Width: 262
+Level: -38
+
+[Landmark Size]
+Size: 3
+
