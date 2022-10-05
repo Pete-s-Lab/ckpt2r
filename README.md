@@ -1,4 +1,4 @@
-# Checkpoint importer for R
+# ckpt2r: Checkpoint importer for R
 
 R package to import [Stratovan Checkpoint](https://www.stratovan.com/products/checkpoint) files (*.ckpt) directly into R.
 
