@@ -30,8 +30,8 @@ References:
 
 # Example R code
 ```
-# read landmark files
-folder.with.landmarks <- "./tmp/"
+# read landmark files from folder (use your own if you have files already)
+folder.with.landmarks <- ckpt2r_examples()
 LM.list <- read.checkpoint(folder.with.landmarks,
                            keep.missing = FALSE)
 
