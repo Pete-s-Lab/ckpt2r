@@ -18,7 +18,7 @@ Note that the old link `https://github.com/Peter-T-Ruehr/checkpoint_importer_for
 Use the command `devtools::install_github('https://github.com/Peter-T-Ruehr/chkpt2r')` to install the `ckpt2r` package directly from its [GitHub page](https://github.com/Peter-T-Ruehr/chkpt2r).
 
 ## Issues
-If you have trouble with the package, please raisean issue [here](https://github.com/Peter-T-Ruehr/checkpoint_importer_for_R/issues) and I will try to solve it as soon as I can.
+If you have trouble with the package, please raise an issue [here](https://github.com/Peter-T-Ruehr/checkpoint_importer_for_R/issues) and I will try to solve it as soon as I can.
 
 ## Citation
 Please cite the following paper when you use these functions:
