@@ -233,11 +233,11 @@ read.checkpoint <- function(folder, keep.missing = TRUE){
 #' print(LM.list)
 #' 
 #' # convert LM.list to 2D array
-#' array_2D <- array.2D.from.LM.list(LM.list = LM.list)
+#' array_2D <- array_2D_from_LM_list(LM.list = LM.list)
 #' dim(array_2D)
 #' 
 #' @export
-array.2D.from.LM.list <- function(LM.list,
+array_2D_from_LM_list <- function(LM.list,
                                   remove_NAs = FALSE,
                                   verbose = TRUE){
   # show progress percentage

@@ -6,7 +6,7 @@
   * **X, Y, Z:** x-, y- and z-coordinates of landmarks
   * **LM:** names of landmarks
   * **file:** name the file that the list element was generated from
-* `array.2D.from.LM.list()` converts a set of landmarks loaded with `read.checkpoint()` into a 2D array which can then e.g. be converted into a 3D array via `geomorph::arrayspecs()`. The resulting data.frame will have the following dinemsions: n.specimens x  n.landmarks*n.dimensions.
+* `array_2D_from_LM_list()` converts a set of landmarks loaded with `read.checkpoint()` into a 2D array which can then e.g. be converted into a 3D array via `geomorph::arrayspecs()`. The resulting data.frame will have the following dinemsions: n.specimens x  n.landmarks*n.dimensions.
   * `remove_NAs = TRUE` will remove all landmarks that have missing coordinate values in at least one specimen.
   * `verbose = TRUE` informs the user if and which landmarks have beeen removed from the dataset in case `remove_NAs = TRUE`.
 
@@ -44,7 +44,7 @@ LM.list <- read.checkpoint(folder.with.landmarks,
 print(LM.list)
 
 # convert LM.list to 2D array
-array_2D <- array.2D.from.LM.list(LM.list = LM.list,
+array_2D <- array_2D_from_LM_list(LM.list = LM.list,
                                   remove_NAs = FALSE)
 dim(array_2D)
 #  returns: n.specimens,  n.landmarks*n.dimensions
@@ -65,7 +65,7 @@ gpa.results <- gpagen(array.3D)
 #   Error in gpagen(array.3D) : 
 #     Data matrix contains missing values. Estimate these first (see 'estimate.missing').
 # !!! then use keep.missing = TRUE in read.checkpoint) and
-# !!! remove_NAs = TRUE in array.2D.from.LM.list() to remove landmarks with missing data.
+# !!! remove_NAs = TRUE in array_2D_from_LM_list() to remove landmarks with missing data.
 # !!! In our case, specimen_0001 has the landmarks 'antenna_prox_L' and 'antenna_prox_L'
 # !!! marked as missing:
 
@@ -75,7 +75,7 @@ LM.list <- read.checkpoint(folder.with.landmarks,
 # landmarks 'antenna_prox_L' and 'antenna_prox_L' were removed from specimen_0001.
 
 # convert LM.list to 2D array and remove landmarks with missing data
-array_2D <- array.2D.from.LM.list(LM.list = LM.list,
+array_2D <- array_2D_from_LM_list(LM.list = LM.list,
                                   remove_NAs = TRUE,
                                   verbose = TRUE)
 # if verbose = TRUE, this returns warning message with info on which landmarks were removed.
@@ -131,6 +131,12 @@ text(pca.results.uncorr$x[, 1:2], labels = rownames(pca.results.uncorr$x),
 ```
 
 # History
+* v.2-0-0 (2022-10-05)
+  * changed scripts into package
+  * renamed `array_2D_from_LM_list()` to `array_2D_from_LM_list()`
+  * reworked example code
+  * added example files
+  * added `ckpt2r_examples()` function
 * v.1-1-0 (2022-10-04)
   * added `array.2D.from.LM.list()` (after request from Christy Anna Hipsley)
   * added example R code to Readme file
