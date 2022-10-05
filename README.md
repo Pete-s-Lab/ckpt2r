@@ -1,5 +1,6 @@
 # Checkpoint importer for R
 
+# Info
 * `read.checkpoint()` imports landmarks from Stratovan Checkpoint files (*.ckpt) [1] into R[2] so that the Export-step within Checkpoint can be skipped. Returned will be a list of which each list element consists of a dataframe with the collowing columns:
   * **defined:** missing (`M`) or present (`N`), as defined within Checkpoint. When `keep.missing = FALSE`, landmarks with the label `M` will be removed.
   * **X, Y, Z:** x-, y- and z-coordinates of landmarks
@@ -9,6 +10,12 @@
   * `remove_NAs = TRUE` will remove all landmarks that have missing coordinate values in at least one specimen.
   * `verbose = TRUE` informs the user if and which landmarks have beeen removed from the dataset in case `remove_NAs = TRUE`.
 
+Note that the old link `https://github.com/Peter-T-Ruehr/checkpoint_importer_for_R` links to this page.
+
+## Installation
+Use the command `devtools::install_github('https://github.com/Peter-T-Ruehr/chkpt2r')` to install `ckpt2r` package directly from its [GitHub page](https://github.com/Peter-T-Ruehr/chkpt2r).
+
+## Citation
 Please cite the following paper when you use these functions:
 
 Rühr et al. (2021): Juvenile ecology drives adult morphology in two insect orders. Proceedings of the Royal Society B 288: 20210616. https://doi.org/10.1098/rspb.2021.0616
