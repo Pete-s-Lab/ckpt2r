@@ -1,6 +1,6 @@
 # ckpt2r: Checkpoint importer for R
 
-R package to import [Stratovan Checkpoint](https://www.stratovan.com/products/checkpoint) files (*.ckpt) directly into R.
+R package to import [Stratovan Checkpoint](https://www.stratovan.com/products/checkpoint) landmark files (*.ckpt) directly into R.
 
 ## Info
 * `read_checkpoint()` imports landmarks from Stratovan Checkpoint files (*.ckpt) [1] into R[2] so that the Export-step within Checkpoint can be skipped. Returned will be a list of which each list element consists of a dataframe with the collowing columns:
@@ -8,7 +8,7 @@ R package to import [Stratovan Checkpoint](https://www.stratovan.com/products/ch
   * **X, Y, Z:** x-, y- and z-coordinates of landmarks
   * **LM:** names of landmarks
   * **file:** name the file that the list element was generated from
-* `array_2D_from_LM_list()` converts a set of landmarks loaded with `read_checkpoint()` into a 2D array which can then e.g. be converted into a 3D array via `geomorph::arrayspecs()`. The resulting data.frame will have the following dinemsions: n.specimens x  n.landmarks*n.dimensions.
+* `array_2D_from_LM_list()` converts a set of landmarks loaded with `read_checkpoint()` into a 2D array which can then e.g. be used via `geomorph` or `mvMORPH` for geometric morphometrics analyes. The resulting data.frame will have the following dimensions: n.specimens x  n.landmarks*n.dimensions.
   * `remove_NAs = TRUE` will remove all landmarks that have missing coordinate values in at least one specimen.
   * `verbose = TRUE` informs the user if and which landmarks have beeen removed from the dataset in case `remove_NAs = TRUE`.
 
