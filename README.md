@@ -55,9 +55,10 @@ dim(array_2D)
 
 # turn 2D array into 3D array
 require(geomorph)
-array.3D <- arrayspecs(array_2D,
-                       (ncol(array_2D)/3),3, 
-                       sep = ".") # p = # landmarks; k = # dimensions; n = # specimens
+array.3D <- arrayspecs(A = array_2D,
+                       p = (ncol(array_2D)/3),
+                       k = 3, 
+                       sep = ".") 
 dim(array.3D)
 # n.landmarks, n.dimenions, specimens
 #  in the example file case: (23, 3, 15)
@@ -82,8 +83,10 @@ array_2D <- array_2D_from_LM_list(LM.list = LM.list,
                                   remove_NAs = TRUE,
                                   verbose = TRUE)
 # if verbose = TRUE, this returns warning message with info on which landmarks were removed.
-# In our case, several landmarks were missing in at least one of the specimens and were
+# In our case, six landmarks were missing in at least one of the specimens and were
 # thus removed.
+# Of course, you can also load all landmarks and filter them yourself instead letting
+# ckpt2r to it for more control.
 
 # get all landmarks that are still present in the dataset
 LMs_present <- unique(sub("_[^_]+$", "", colnames(array_2D)))
@@ -92,9 +95,10 @@ dim(array_2D)
 #   returns: 15 specimens and 17 landmarks (23-6) in 3 dimensions
 
 # turn 2D array into 3D array again
-array.3D <- arrayspecs(array_2D,
-                       (ncol(array_2D)/3),3, 
-                       sep = ".") # p = # landmarks; k = # dimensions; n = # specimens
+array.3D <- arrayspecs(A = array_2D,
+                       p = (ncol(array_2D)/3),
+                       k = 3, 
+                       sep = ".")
 dim(array.3D)
 
 # Procrustes alignment
@@ -117,17 +121,13 @@ points(gpa.results$consensus, pch=16)
 text(gpa.results$consensus, labels = LMs_present, 
      pos = 4, cex = 0.75, srt=-30)
 
-# create geomorph data frmae
-gdf <- geomorph.data.frame(gpa.coords = gpa.results$coords,
-                           Csize = gpa.results$Csize)
-
 # run PCA
-pca.results.uncorr <- gm.prcomp(A = gdf$gpa.coords, phy = gdf$tree)
+pca.results <- gm.prcomp(A = gpa.results$coords)
 
 # print and plot PCA results
-summary(pca.results.uncorr)
-plot(pca.results.uncorr, pch = 16)
-text(pca.results.uncorr$x[, 1:2], labels = rownames(pca.results.uncorr$x), 
+summary(pca.results)
+plot(pca.results, pch = 16)
+text(pca.results$x[, 1:2], labels = rownames(pca.results$x), 
      pos = 4, cex = 0.75, srt=-0)
 
 # and so on...
