@@ -1,0 +1,122 @@
+Version 6
+Stratovan Checkpoint (TM)
+
+[Specimen Information]
+Name: file_neame, .ckpt
+ID: specimen_ID
+Birthdate: 
+Sex: 
+
+[Specimen Study]
+StudyInstanceUID: 
+StudyID: 
+StudyDate: 
+StudyTime: 
+StudyDescription: 
+
+[Specimen Series]
+SeriesInstanceUID: 
+SeriesNumber: 
+SeriesDate: 
+SeriesTime: 
+SeriesModality: 
+SeriesProtocol: 
+SeriesPart: 
+SeriesDescription: 
+
+[Specimen File(s)]
+NumberOfFolders: 1
+Folder: specimen_ID
+Files: "AV00009_CASENT0741289_Pristomyrmex profundus_head" 
+
+[Surface Information]
+NumberOfSurfaces: 1
+0: -52 "-52" 200 200 200
+
+[Templates]
+NumberOfTemplates: 1
+0 F1ECC42E-A7F2-4E35-AC7F-3946C4D0B674 0
+ 
+[Landmarks]
+NumberOfPoints: 21
+Units: um
+0: 0 N 0x48 102.133423 369.704102 403.389191 -0.909987 -0.068355 -0.408964 "eye_tip_L" 0 1
+1: 0 N 0x48 689.286926 367.342468 507.101074 0.970733 -0.238570 -0.027612 "eye_tip_R" 0 2
+2: 0 N 0x48 474.673462 119.899261 220.650024 0.783416 -0.358725 0.507520 "mandible_dist_inc_L" 0 3
+3: 0 N 0x48 461.099884 72.907227 189.324615 -0.583174 -0.704815 -0.403912 "mandible_dist_inc_R" 0 4
+4: 0 N 0x48 373.316986 540.475891 611.138184 0.581872 0.717355 -0.383180 "head_post_C" 0 5
+5: 0 N 0x48 445.602997 285.455933 154.304840 -0.117365 -0.732290 -0.670803 "clypeus_edge_C" 0 6
+6: 0 N 0x48 430.506592 270.928741 241.384033 0.057283 0.700740 -0.711113 "clypeo_labral_sut_C" 0 7
+7: 0 N 0x48 342.781250 257.337891 242.289429 -0.445168 0.006684 -0.895422 "clypeo_labral_sut_L" 0 8
+8: 0 N 0x48 512.820313 256.066895 268.259766 0.210605 0.445116 -0.870355 "clypeo_labral_sut_R" 0 9
+9: 0 N 0x48 430.449005 201.851563 259.498932 -0.033562 -0.979464 0.198803 "labrum_C" 0 10
+10: 0 N 0x48 232.788635 220.955414 312.532349 0.462680 -0.248357 -0.851027 "mandible_post_cond_dent_L" 0 11
+11: 0 N 0x48 597.220215 228.178589 374.511261 -0.459319 -0.416194 -0.784735 "mandible_post_cond_dent_R" 0 12
+12: 0 N 0x48 356.189453 342.479675 174.674789 -0.198400 -0.256045 -0.946086 "antenna_prox_L" 0 13
+13: 0 N 0x48 524.591125 342.085876 204.276657 0.010605 -0.476344 -0.879195 "antenna_prox_R" 0 14
+14: 0 N 0x48 404.728699 198.184052 422.199707 -0.246595 -0.637540 0.729886 "postocciput_ven_C" 0 15
+15: 0 N 0x48 288.543945 314.285156 265.957031 -0.983953 0.012735 0.177974 "anterior_tent_pit_L" 0 16
+16: 0 N 0x48 558.559082 317.445313 307.785156 0.790216 0.611535 -0.039787 "anterior_tent_pit_R" 0 17
+17: 0 N 0x48 320.298828 437.738281 566.105469 0.960260 -0.183630 0.210193 "posterior_tent_pit_L" 0 18
+18: 0 N 0x48 426.657715 439.199219 583.386719 -0.926201 0.070040 0.370468 "posterior_tent_pit_R" 0 19
+19: 0 N 0x48 382.847656 432.878174 518.690430 -0.189672 0.731174 -0.655294 "posterior_tentorial_bridge_ant_C" 0 20
+20: 0 N 0x48 379.613281 436.680573 540.540527 -0.231116 0.553635 0.800046 "posterior_tentorial_bridge_post_C" 0 21
+
+[SinglePoints]
+NumberOfSinglePoints: 21
+0: 0 0 1
+1: 1 0 2
+2: 2 0 3
+3: 3 0 4
+4: 4 0 5
+5: 5 0 6
+6: 6 0 7
+7: 7 0 8
+8: 8 0 9
+9: 9 0 10
+10: 10 0 11
+11: 11 0 12
+12: 12 0 13
+13: 13 0 14
+14: 14 0 15
+15: 15 0 16
+16: 16 0 17
+17: 17 0 18
+18: 18 0 19
+19: 19 0 20
+20: 20 0 21
+
+[Curves]
+NumberOfCurves: 0
+
+[Patches]
+NumberOfPatches: 0
+
+[Joints]
+NumberOfJoints: 0
+
+[Lengths]
+NumberOfLengths: 0
+
+[Lines]
+NumberOfLines: 0
+
+[Angles]
+NumberOfAngles: 0
+
+[Planes]
+NumberOfPlanes: 0
+
+[Image Stack]
+Units: um
+Spacing: 1.428000 1.428000 1.428000
+NumberOfFiles: 1
+Files: "AV00009_CASENT0741289_Pristomyrmex profundus_head_sc52.tif" 
+
+[Contrast and Brightness]
+Width: 282
+Level: -4
+
+[Landmark Size]
+Size: 1
+

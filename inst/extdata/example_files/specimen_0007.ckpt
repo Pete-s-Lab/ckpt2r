@@ -1,0 +1,122 @@
+Version 6
+Stratovan Checkpoint (TM)
+
+[Specimen Information]
+Name: file_neame, .ckpt
+ID: specimen_ID
+Birthdate: 
+Sex: 
+
+[Specimen Study]
+StudyInstanceUID: 
+StudyID: 
+StudyDate: 
+StudyTime: 
+StudyDescription: 
+
+[Specimen Series]
+SeriesInstanceUID: 
+SeriesNumber: 
+SeriesDate: 
+SeriesTime: 
+SeriesModality: 
+SeriesProtocol: 
+SeriesPart: 
+SeriesDescription: 
+
+[Specimen File(s)]
+NumberOfFolders: 1
+Folder: specimen_ID
+Files: "AV00007_CASENT0741283_Formica obscuripes_head" 
+
+[Surface Information]
+NumberOfSurfaces: 1
+0: -7 "" 200 200 200
+
+[Templates]
+NumberOfTemplates: 1
+0 F1ECC42E-A7F2-4E35-AC7F-3946C4D0B674 0
+ 
+[Landmarks]
+NumberOfPoints: 21
+Units: um
+0: 0 N 0x48 201.921875 1419.312500 1647.906250 0.810750 -0.528779 -0.251152 "eye_tip_L" 0 1
+1: 0 N 0x48 1788.228760 1377.727173 1138.836548 0.771471 0.579888 -0.261844 "eye_tip_R" 0 2
+2: 0 N 0x48 717.905823 217.218018 190.912964 0.736449 -0.676082 0.023579 "mandible_dist_inc_L" 0 3
+3: 0 N 0x48 473.303894 202.184814 194.953247 -0.767505 -0.639097 0.049911 "mandible_dist_inc_R" 0 4
+4: 0 N 0x48 1189.844604 1576.086914 1890.534912 0.281240 0.750219 0.598395 "head_post_C" 0 5
+5: 0 N 0x48 595.138184 786.591675 259.147339 0.033902 -0.519052 -0.854070 "clypeus_edge_C" 0 6
+6: 0 N 0x48 684.757813 788.850830 475.912109 0.155555 -0.975291 -0.156876 "clypeo_labral_sut_C" 0 7
+7: 0 N 0x48 421.914063 780.205322 627.810547 -0.656594 -0.598106 -0.459514 "clypeo_labral_sut_L" 0 8
+8: 0 N 0x48 968.492188 766.372620 442.529297 0.073846 -0.956795 -0.281231 "clypeo_labral_sut_R" 0 9
+9: 0 N 0x48 708.313232 586.168579 588.860779 0.173506 -0.980025 0.097194 "labrum_C" 0 10
+10: 0 N 0x48 159.798126 540.161255 969.990601 0.302747 -0.105207 -0.947246 "mandible_post_cond_dent_L" 0 11
+11: 0 N 0x48 1377.938477 503.587128 547.910706 -0.622168 -0.185434 -0.760606 "mandible_post_cond_dent_R" 0 12
+12: 0 N 0x48 541.142578 1299.607422 737.757813 -0.550750 0.168050 -0.817578 "antenna_prox_L" 0 13
+13: 0 N 0x48 974.860535 1284.356567 591.131470 -0.439864 0.414011 -0.796941 "antenna_prox_R" 0 14
+14: 0 N 0x48 884.635010 377.901123 1149.861328 0.143493 -0.898615 0.414609 "postocciput_ven_C" 0 15
+15: 0 N 0x48 362.411285 949.390625 795.000183 -0.078483 0.626244 -0.775667 "anterior_tent_pit_L" 0 16
+16: 0 N 0x48 1122.981445 925.390625 538.569458 0.672922 0.739530 -0.016490 "anterior_tent_pit_R" 0 17
+17: 0 N 0x48 990.104187 951.390625 1840.513428 0.986870 -0.138470 0.083143 "posterior_tent_pit_L" 0 18
+18: 0 N 0x48 1258.350464 954.390625 1769.760132 -0.711207 0.522192 0.470638 "posterior_tent_pit_R" 0 19
+19: 0 N 0x48 1066.578125 1080.638428 1611.722656 0.893994 0.371820 -0.250047 "posterior_tentorial_bridge_ant_C" 0 20
+20: 0 N 0x48 1108.937500 998.100525 1750.718750 0.106947 -0.877006 0.468426 "posterior_tentorial_bridge_post_C" 0 21
+
+[SinglePoints]
+NumberOfSinglePoints: 21
+0: 0 0 1
+1: 1 0 2
+2: 2 0 3
+3: 3 0 4
+4: 4 0 5
+5: 5 0 6
+6: 6 0 7
+7: 7 0 8
+8: 8 0 9
+9: 9 0 10
+10: 10 0 11
+11: 11 0 12
+12: 12 0 13
+13: 13 0 14
+14: 14 0 15
+15: 15 0 16
+16: 16 0 17
+17: 17 0 18
+18: 18 0 19
+19: 19 0 20
+20: 20 0 21
+
+[Curves]
+NumberOfCurves: 0
+
+[Patches]
+NumberOfPatches: 0
+
+[Joints]
+NumberOfJoints: 0
+
+[Lengths]
+NumberOfLengths: 0
+
+[Lines]
+NumberOfLines: 0
+
+[Angles]
+NumberOfAngles: 0
+
+[Planes]
+NumberOfPlanes: 0
+
+[Image Stack]
+Units: um
+Spacing: 4.006200 4.006200 4.006200
+NumberOfFiles: 1
+Files: "AV00007_CASENT0741283_Formica obscuripes_head_sc58.tif" 
+
+[Contrast and Brightness]
+Width: 181
+Level: -14
+
+[Landmark Size]
+Size: 2
+

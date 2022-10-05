@@ -1,0 +1,122 @@
+Version 6
+Stratovan Checkpoint (TM)
+
+[Specimen Information]
+Name: file_neame, .ckpt
+ID: specimen_ID
+Birthdate: 
+Sex: 
+
+[Specimen Study]
+StudyInstanceUID: 
+StudyID: 
+StudyDate: 
+StudyTime: 
+StudyDescription: 
+
+[Specimen Series]
+SeriesInstanceUID: 
+SeriesNumber: 
+SeriesDate: 
+SeriesTime: 
+SeriesModality: 
+SeriesProtocol: 
+SeriesPart: 
+SeriesDescription: 
+
+[Specimen File(s)]
+NumberOfFolders: 1
+Folder: specimen_ID
+Files: "AV00012_CASENT0741293_Polyrhachis bihamata_head" 
+
+[Surface Information]
+NumberOfSurfaces: 1
+0: -52 "-52" 200 200 200
+
+[Templates]
+NumberOfTemplates: 1
+0 F1ECC42E-A7F2-4E35-AC7F-3946C4D0B674 0
+ 
+[Landmarks]
+NumberOfPoints: 21
+Units: um
+0: 0 N 0x48 442.134888 767.602295 761.647522 -0.708229 -0.524898 -0.472116 "eye_tip_L" 0 1
+1: 0 N 0x48 2498.551758 685.532593 875.321289 0.914818 -0.329874 -0.233006 "eye_tip_R" 0 2
+2: 0 N 0x48 1648.492188 970.896851 2725.160889 0.744185 0.158783 0.648827 "mandible_dist_inc_L" 0 3
+3: 0 N 0x48 1149.103271 902.330505 2871.217773 -0.850384 0.323326 0.415099 "mandible_dist_inc_R" 0 4
+4: 0 N 0x48 1512.704956 1268.283325 177.784668 -0.009330 -0.021297 -0.999730 "head_post_C" 0 5
+5: 0 N 0x48 1423.341553 470.742401 2434.483887 0.175822 -0.869770 0.461070 "clypeus_edge_C" 0 6
+6: 0 N 0x48 1379.802368 599.713684 2289.308594 -0.058618 -0.152696 0.986533 "clypeo_labral_sut_C" 0 7
+7: 0 N 0x48 967.750000 670.678711 2198.415039 -0.107959 -0.124724 0.986301 "clypeo_labral_sut_L" 0 8
+8: 0 N 0x48 1831.171875 633.423828 2255.793945 -0.902445 0.335892 -0.269759 "clypeo_labral_sut_R" 0 9
+9: 0 N 0x48 1393.952148 883.565735 2324.256836 -0.450435 0.828772 0.332033 "labrum_C" 0 10
+10: 0 N 0x48 567.778687 1109.121582 2227.665283 -0.582398 -0.008316 0.812861 "mandible_post_cond_dent_L" 0 11
+11: 0 N 0x48 2203.978760 1046.619141 2339.618652 0.101295 0.171551 0.979954 "mandible_post_cond_dent_R" 0 12
+12: 0 N 0x48 1148.151123 171.978149 1257.989990 0.039098 -0.944770 0.325393 "antenna_prox_L" 0 13
+13: 0 N 0x48 1695.931885 144.132813 1295.082886 -0.032236 -0.827289 0.560850 "antenna_prox_R" 0 14
+14: 0 N 0x48 1426.165161 1545.892578 1934.127319 0.071687 0.990621 0.116321 "postocciput_ven_C" 0 15
+15: 0 N 0x48 806.714722 599.167053 1948.710693 -0.739177 -0.023909 0.673086 "anterior_tent_pit_L" 0 16
+16: 0 N 0x48 1990.569458 540.478882 2031.394287 0.604545 -0.673665 0.425091 "anterior_tent_pit_R" 0 17
+17: 0 N 0x48 1299.802734 1535.335571 691.468750 -0.558133 0.276378 -0.782370 "posterior_tent_pit_L" 0 18
+18: 0 N 0x48 1718.939453 1507.130005 712.906250 -0.057187 -0.571855 -0.818359 "posterior_tent_pit_R" 0 19
+19: 0 N 0x48 1503.265625 1290.409180 757.286133 0.636347 0.402035 0.658355 "posterior_tentorial_bridge_ant_C" 0 20
+20: 0 N 0x48 1504.845703 1403.593750 704.573914 0.115140 0.990938 0.069172 "posterior_tentorial_bridge_post_C" 0 21
+
+[SinglePoints]
+NumberOfSinglePoints: 21
+0: 0 0 1
+1: 1 0 2
+2: 2 0 3
+3: 3 0 4
+4: 4 0 5
+5: 5 0 6
+6: 6 0 7
+7: 7 0 8
+8: 8 0 9
+9: 9 0 10
+10: 10 0 11
+11: 11 0 12
+12: 12 0 13
+13: 13 0 14
+14: 14 0 15
+15: 15 0 16
+16: 16 0 17
+17: 17 0 18
+18: 18 0 19
+19: 19 0 20
+20: 20 0 21
+
+[Curves]
+NumberOfCurves: 0
+
+[Patches]
+NumberOfPatches: 0
+
+[Joints]
+NumberOfJoints: 0
+
+[Lengths]
+NumberOfLengths: 0
+
+[Lines]
+NumberOfLines: 0
+
+[Angles]
+NumberOfAngles: 0
+
+[Planes]
+NumberOfPlanes: 0
+
+[Image Stack]
+Units: um
+Spacing: 4.918100 4.918100 4.918100
+NumberOfFiles: 1
+Files: "AV00012_CASENT0741293_Polyrhachis bihamata_head_sc61.tif" 
+
+[Contrast and Brightness]
+Width: 162
+Level: -28
+
+[Landmark Size]
+Size: 2
+

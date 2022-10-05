@@ -1,0 +1,122 @@
+Version 6
+Stratovan Checkpoint (TM)
+
+[Specimen Information]
+Name: file_neame, .ckpt
+ID: specimen_ID
+Birthdate: 
+Sex: 
+
+[Specimen Study]
+StudyInstanceUID: 
+StudyID: 
+StudyDate: 
+StudyTime: 
+StudyDescription: 
+
+[Specimen Series]
+SeriesInstanceUID: 
+SeriesNumber: 
+SeriesDate: 
+SeriesTime: 
+SeriesModality: 
+SeriesProtocol: 
+SeriesPart: 
+SeriesDescription: 
+
+[Specimen File(s)]
+NumberOfFolders: 1
+Folder: specimen_ID
+Files: "AV00005_CASENT0741276_Stenamma heathi_head" 
+
+[Surface Information]
+NumberOfSurfaces: 1
+0: -44 "-44" 200 200 200
+
+[Templates]
+NumberOfTemplates: 1
+0 F1ECC42E-A7F2-4E35-AC7F-3946C4D0B674 0
+ 
+[Landmarks]
+NumberOfPoints: 21
+Units: um
+0: 0 N 0x48 161.740204 355.091858 613.450745 -0.903283 -0.428699 -0.017204 "eye_tip_L" 0 1
+1: 0 N 0x48 990.190186 389.458679 586.433289 0.975430 -0.097290 -0.197663 "eye_tip_R" 0 2
+2: 0 N 0x48 640.384583 369.433868 1255.932617 0.719274 0.399946 0.568057 "mandible_dist_inc_L" 0 3
+3: 0 N 0x48 503.805298 376.205200 1208.777954 -0.788098 0.324398 0.523134 "mandible_dist_inc_R" 0 4
+4: 0 N 0x48 571.653259 442.091797 65.242065 -0.164000 0.516577 -0.840388 "head_post_C" 0 5
+5: 0 N 0x48 594.173096 191.900146 960.732178 0.087159 -0.404544 0.910356 "clypeus_edge_C" 0 6
+6: 0 N 0x48 592.574890 199.408447 937.498474 -0.002904 0.511233 0.859438 "clypeo_labral_sut_C" 0 7
+7: 0 N 0x48 467.062256 204.867188 934.687500 -0.710517 -0.510021 0.484814 "clypeo_labral_sut_L" 0 8
+8: 0 N 0x48 714.303223 213.640625 918.273438 0.901609 0.293426 -0.317810 "clypeo_labral_sut_R" 0 9
+9: 0 N 0x48 588.723022 296.466095 972.765015 -0.088618 0.430170 0.898388 "labrum_C" 0 10
+10: 0 N 0x48 277.723969 368.351501 909.204834 0.350487 -0.678535 0.645561 "mandible_post_cond_dent_L" 0 11
+11: 0 N 0x48 891.012329 396.125366 892.553772 -0.513183 -0.391817 0.763624 "mandible_post_cond_dent_R" 0 12
+12: 0 N 0x48 513.187744 45.845398 861.371033 -0.420263 -0.588442 0.690735 "antenna_prox_L" 0 13
+13: 0 N 0x48 677.021790 54.807922 856.193481 0.905615 -0.215088 0.365512 "antenna_prox_R" 0 14
+14: 0 N 0x48 575.830688 522.178650 840.904053 -0.073482 0.870604 -0.486465 "postocciput_ven_C" 0 15
+15: 0 N 0x48 414.138123 182.742188 837.726563 0.604138 -0.688465 -0.401290 "anterior_tent_pit_L" 0 16
+16: 0 N 0x48 764.851501 196.234375 822.312500 0.937864 0.339958 -0.069570 "anterior_tent_pit_R" 0 17
+17: 0 N 0x48 486.120300 540.460938 313.875000 0.941113 0.336341 -0.034380 "posterior_tent_pit_L" 0 18
+18: 0 N 0x48 635.446716 543.164063 310.398438 0.895532 -0.443638 -0.034751 "posterior_tent_pit_R" 0 19
+19: 0 N 0x48 569.921875 462.711060 371.353699 0.865554 0.303661 -0.398254 "posterior_tentorial_bridge_ant_C" 0 20
+20: 0 N 0x48 566.775879 511.671875 330.414063 -0.157493 0.408477 -0.899079 "posterior_tentorial_bridge_post_C" 0 21
+
+[SinglePoints]
+NumberOfSinglePoints: 21
+0: 0 0 1
+1: 1 0 2
+2: 2 0 3
+3: 3 0 4
+4: 4 0 5
+5: 5 0 6
+6: 6 0 7
+7: 7 0 8
+8: 8 0 9
+9: 9 0 10
+10: 10 0 11
+11: 11 0 12
+12: 12 0 13
+13: 13 0 14
+14: 14 0 15
+15: 15 0 16
+16: 16 0 17
+17: 17 0 18
+18: 18 0 19
+19: 19 0 20
+20: 20 0 21
+
+[Curves]
+NumberOfCurves: 0
+
+[Patches]
+NumberOfPatches: 0
+
+[Joints]
+NumberOfJoints: 0
+
+[Lengths]
+NumberOfLengths: 0
+
+[Lines]
+NumberOfLines: 0
+
+[Angles]
+NumberOfAngles: 0
+
+[Planes]
+NumberOfPlanes: 0
+
+[Image Stack]
+Units: um
+Spacing: 2.164700 2.164700 2.164700
+NumberOfFiles: 1
+Files: "AV00005_CASENT0741276_Stenamma heathi_head_sc59.tif" 
+
+[Contrast and Brightness]
+Width: 162
+Level: -17
+
+[Landmark Size]
+Size: 2
+

@@ -1,0 +1,122 @@
+Version 6
+Stratovan Checkpoint (TM)
+
+[Specimen Information]
+Name: file_neame, .ckpt
+ID: specimen_ID
+Birthdate: 
+Sex: 
+
+[Specimen Study]
+StudyInstanceUID: 
+StudyID: 
+StudyDate: 
+StudyTime: 
+StudyDescription: 
+
+[Specimen Series]
+SeriesInstanceUID: 
+SeriesNumber: 
+SeriesDate: 
+SeriesTime: 
+SeriesModality: 
+SeriesProtocol: 
+SeriesPart: 
+SeriesDescription: 
+
+[Specimen File(s)]
+NumberOfFolders: 1
+Folder: specimen_ID
+Files: "AV00006_CASENT0741277_Gesomyrmex howardi_head" 
+
+[Surface Information]
+NumberOfSurfaces: 1
+0: -47 "" 200 200 200
+
+[Templates]
+NumberOfTemplates: 1
+0 F1ECC42E-A7F2-4E35-AC7F-3946C4D0B674 0
+ 
+[Landmarks]
+NumberOfPoints: 21
+Units: um
+0: 0 N 0x48 39.359375 473.880310 594.759521 -0.722278 0.645850 -0.247371 "eye_tip_L" 0 1
+1: 0 N 0x48 723.592712 459.535339 626.798279 0.925902 0.355496 -0.127781 "eye_tip_R" 0 2
+2: 0 N 0x48 429.449585 13.084782 54.555908 0.820229 -0.232886 -0.522482 "mandible_dist_inc_L" 0 3
+3: 0 N 0x48 310.211578 19.199467 85.163391 -0.841383 -0.126281 -0.525478 "mandible_dist_inc_R" 0 4
+4: 0 N 0x48 381.797455 500.550903 957.381409 -0.013270 0.631863 0.774966 "head_post_C" 0 5
+5: 0 N 0x48 389.691650 190.628357 218.090958 0.108399 0.506198 -0.855578 "clypeus_edge_C" 0 6
+6: 0 N 0x48 389.408447 235.109375 315.145142 0.024046 0.783391 -0.621064 "clypeo_labral_sut_C" 0 7
+7: 0 N 0x48 293.901154 210.359375 349.247742 -0.428264 0.281216 -0.858783 "clypeo_labral_sut_L" 0 8
+8: 0 N 0x48 487.378937 206.375000 365.057617 0.858892 0.237957 0.453521 "clypeo_labral_sut_R" 0 9
+9: 0 N 0x48 388.250763 190.108826 284.563232 0.071601 -0.258012 -0.963485 "labrum_C" 0 10
+10: 0 N 0x48 197.821945 140.504745 435.525269 0.069452 -0.345927 -0.935687 "mandible_post_cond_dent_L" 0 11
+11: 0 N 0x48 570.286987 136.326691 448.731506 -0.254247 -0.108580 -0.961025 "mandible_post_cond_dent_R" 0 12
+12: 0 N 0x48 235.560257 261.943726 366.822723 -0.644893 -0.358100 -0.675186 "antenna_prox_L" 0 13
+13: 0 N 0x48 539.951599 262.332947 378.413391 0.728151 -0.012873 -0.685296 "antenna_prox_R" 0 14
+14: 0 N 0x48 379.015656 64.261322 525.766968 -0.103709 -0.924746 0.366181 "postocciput_ven_C" 0 15
+15: 0 N 0x48 220.096436 233.226563 405.414063 0.954592 0.028286 0.296571 "anterior_tent_pit_L" 0 16
+16: 0 N 0x48 549.325684 228.742188 417.320313 -0.863387 0.028205 0.503752 "anterior_tent_pit_R" 0 17
+17: 0 N 0x48 302.829834 341.796875 901.835938 0.934229 -0.067291 0.350269 "posterior_tent_pit_L" 0 18
+18: 0 N 0x48 430.407959 338.515625 905.234375 0.990261 -0.107806 0.088100 "posterior_tent_pit_R" 0 19
+19: 0 N 0x48 369.812500 352.427368 820.161499 -0.917488 0.204354 0.341256 "posterior_tentorial_bridge_ant_C" 0 20
+20: 0 N 0x48 368.210938 351.339111 859.093933 0.023983 -0.336767 0.941283 "posterior_tentorial_bridge_post_C" 0 21
+
+[SinglePoints]
+NumberOfSinglePoints: 21
+0: 0 0 1
+1: 1 0 2
+2: 2 0 3
+3: 3 0 4
+4: 4 0 5
+5: 5 0 6
+6: 6 0 7
+7: 7 0 8
+8: 8 0 9
+9: 9 0 10
+10: 10 0 11
+11: 11 0 12
+12: 12 0 13
+13: 13 0 14
+14: 14 0 15
+15: 15 0 16
+16: 16 0 17
+17: 17 0 18
+18: 18 0 19
+19: 19 0 20
+20: 20 0 21
+
+[Curves]
+NumberOfCurves: 0
+
+[Patches]
+NumberOfPatches: 0
+
+[Joints]
+NumberOfJoints: 0
+
+[Lengths]
+NumberOfLengths: 0
+
+[Lines]
+NumberOfLines: 0
+
+[Angles]
+NumberOfAngles: 0
+
+[Planes]
+NumberOfPlanes: 0
+
+[Image Stack]
+Units: um
+Spacing: 1.521600 1.521600 1.521600
+NumberOfFiles: 1
+Files: "AV00006_CASENT0741277_Gesomyrmex howardi_head_sc68.tif" 
+
+[Contrast and Brightness]
+Width: 162
+Level: -37
+
+[Landmark Size]
+Size: 2
+

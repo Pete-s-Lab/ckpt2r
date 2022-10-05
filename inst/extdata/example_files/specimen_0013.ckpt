@@ -1,0 +1,122 @@
+Version 6
+Stratovan Checkpoint (TM)
+
+[Specimen Information]
+Name: file_neame, .ckpt
+ID: specimen_ID
+Birthdate: 
+Sex: 
+
+[Specimen Study]
+StudyInstanceUID: 
+StudyID: 
+StudyDate: 
+StudyTime: 
+StudyDescription: 
+
+[Specimen Series]
+SeriesInstanceUID: 
+SeriesNumber: 
+SeriesDate: 
+SeriesTime: 
+SeriesModality: 
+SeriesProtocol: 
+SeriesPart: 
+SeriesDescription: 
+
+[Specimen File(s)]
+NumberOfFolders: 1
+Folder: specimen_ID
+Files: "AV00013_CASENT0741295_Carebara diversa_head" 
+
+[Surface Information]
+NumberOfSurfaces: 1
+0: -4 "" 200 200 200
+
+[Templates]
+NumberOfTemplates: 1
+0 F1ECC42E-A7F2-4E35-AC7F-3946C4D0B674 0
+ 
+[Landmarks]
+NumberOfPoints: 21
+Units: um
+0: 0 N 0x48 22.889954 301.717834 665.984314 -0.767731 0.122815 0.628892 "eye_tip_L" 0 1
+1: 0 N 0x48 700.043579 303.497833 654.586182 0.987023 0.132828 0.090235 "eye_tip_R" 0 2
+2: 0 N 0x48 495.125854 52.689941 201.309738 0.909346 -0.383975 -0.160165 "mandible_dist_inc_L" 0 3
+3: 0 N 0x48 254.881363 53.089722 122.541374 -0.818528 -0.573619 -0.031201 "mandible_dist_inc_R" 0 4
+4: 0 N 0x48 364.505096 405.685181 976.028137 0.265387 0.560169 0.784717 "head_post_C" 0 5
+5: 0 N 0x48 352.800171 262.190491 248.332840 -0.041127 0.278311 -0.959610 "clypeus_edge_C" 0 6
+6: 0 N 0x48 355.382813 242.159668 276.180054 -0.470308 0.574851 0.669594 "clypeo_labral_sut_C" 0 7
+7: 0 N 0x48 229.035156 241.786682 311.335754 -0.930886 0.068727 -0.358788 "clypeo_labral_sut_L" 0 8
+8: 0 N 0x48 482.945313 244.024521 304.417725 -0.839395 -0.444075 0.313390 "clypeo_labral_sut_R" 0 9
+9: 0 N 0x48 360.419525 89.861465 196.975937 0.045270 -0.596382 0.801423 "labrum_C" 0 10
+10: 0 N 0x48 107.769821 154.745819 404.540131 -0.109986 -0.115692 -0.987177 "mandible_post_cond_dent_L" 0 11
+11: 0 N 0x48 601.282349 160.748657 391.599152 -0.164151 -0.061101 -0.984541 "mandible_post_cond_dent_R" 0 12
+12: 0 N 0x48 237.589691 349.918732 304.481293 -0.919168 -0.145247 -0.366106 "antenna_prox_L" 0 13
+13: 0 N 0x48 467.388550 359.483398 295.807281 0.648759 -0.285599 -0.705369 "antenna_prox_R" 0 14
+14: 0 N 0x48 358.519409 49.251617 469.584137 0.163560 -0.952992 -0.255059 "postocciput_ven_C" 0 15
+15: 0 N 0x48 185.626343 282.542969 386.550598 -0.971496 -0.224695 0.075548 "anterior_tent_pit_L" 0 16
+16: 0 N 0x48 523.929321 288.542969 376.985687 0.260521 0.959633 -0.105988 "anterior_tent_pit_R" 0 17
+17: 0 N 0x48 292.368408 278.542969 892.207825 -0.999911 -0.009831 0.008992 "posterior_tent_pit_L" 0 18
+18: 0 N 0x48 438.044708 275.542969 893.953979 -0.981115 -0.117667 0.153521 "posterior_tent_pit_R" 0 19
+19: 0 N 0x48 361.945465 296.542969 791.634216 0.182808 -0.980329 -0.074401 "posterior_tentorial_bridge_ant_C" 0 20
+20: 0 N 0x48 363.313965 289.082031 829.346802 -0.027460 0.164353 0.986019 "posterior_tentorial_bridge_post_C" 0 21
+
+[SinglePoints]
+NumberOfSinglePoints: 21
+0: 0 0 1
+1: 1 0 2
+2: 2 0 3
+3: 3 0 4
+4: 4 0 5
+5: 5 0 6
+6: 6 0 7
+7: 7 0 8
+8: 8 0 9
+9: 9 0 10
+10: 10 0 11
+11: 11 0 12
+12: 12 0 13
+13: 13 0 14
+14: 14 0 15
+15: 15 0 16
+16: 16 0 17
+17: 17 0 18
+18: 18 0 19
+19: 19 0 20
+20: 20 0 21
+
+[Curves]
+NumberOfCurves: 0
+
+[Patches]
+NumberOfPatches: 0
+
+[Joints]
+NumberOfJoints: 0
+
+[Lengths]
+NumberOfLengths: 0
+
+[Lines]
+NumberOfLines: 0
+
+[Angles]
+NumberOfAngles: 0
+
+[Planes]
+NumberOfPlanes: 0
+
+[Image Stack]
+Units: um
+Spacing: 1.666100 1.666100 1.666100
+NumberOfFiles: 1
+Files: "AV00013_CASENT0741295_Carebara diversa_head_sc67.tif" 
+
+[Contrast and Brightness]
+Width: 161
+Level: -4
+
+[Landmark Size]
+Size: 2
+

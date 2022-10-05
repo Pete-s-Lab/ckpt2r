@@ -1,0 +1,122 @@
+Version 6
+Stratovan Checkpoint (TM)
+
+[Specimen Information]
+Name: file_neame, .ckpt
+ID: specimen_ID
+Birthdate: 
+Sex: 
+
+[Specimen Study]
+StudyInstanceUID: 
+StudyID: 
+StudyDate: 
+StudyTime: 
+StudyDescription: 
+
+[Specimen Series]
+SeriesInstanceUID: 
+SeriesNumber: 
+SeriesDate: 
+SeriesTime: 
+SeriesModality: 
+SeriesProtocol: 
+SeriesPart: 
+SeriesDescription: 
+
+[Specimen File(s)]
+NumberOfFolders: 1
+Folder: specimen_ID
+Files: "AV00014_CASENT0741326_Pogonomyrmex barbatus_head" 
+
+[Surface Information]
+NumberOfSurfaces: 1
+0: -49 "-49" 200 200 200
+
+[Templates]
+NumberOfTemplates: 1
+0 F1ECC42E-A7F2-4E35-AC7F-3946C4D0B674 0
+ 
+[Landmarks]
+NumberOfPoints: 21
+Units: um
+0: 0 N 0x48 1225.917847 2611.754883 1045.832153 -0.336498 0.884310 -0.323673 "eye_tip_L" 0 1
+1: 0 N 0x48 642.343750 152.343750 1189.368286 -0.052608 -0.571613 -0.818835 "eye_tip_R" 0 2
+2: 0 N 0x48 821.677612 1514.813110 3101.577881 -0.104030 -0.680822 0.725024 "mandible_dist_inc_L" 0 3
+3: 0 N 0x48 751.345215 1301.400269 3243.781738 0.205559 0.574380 0.792359 "mandible_dist_inc_R" 0 4
+4: 0 N 0x48 1565.374512 1205.545898 204.616211 0.476403 -0.085680 -0.875042 "head_post_C" 0 5
+5: 0 N 0x48 324.529480 1569.736206 2077.731445 -0.438097 0.060436 0.896894 "clypeus_edge_C" 0 6
+6: 0 N 0x48 461.947876 1533.606689 2080.970947 -0.496663 0.126961 0.858607 "clypeo_labral_sut_C" 0 7
+7: 0 N 0x48 610.601563 1916.046875 2090.736328 -0.282235 0.569452 -0.772054 "clypeo_labral_sut_L" 0 8
+8: 0 N 0x48 398.660156 1135.000000 2107.933594 -0.082531 -0.996018 0.033709 "clypeo_labral_sut_R" 0 9
+9: 0 N 0x48 474.523651 1535.562622 2353.928223 -0.551480 0.386820 0.739080 "labrum_C" 0 10
+10: 0 N 0x48 1193.359375 2392.406982 2104.111328 -0.502391 -0.534057 0.679990 "mandible_post_cond_dent_L" 0 11
+11: 0 N 0x48 713.283875 437.428284 2179.913574 -0.363457 0.749424 0.553409 "mandible_post_cond_dent_R" 0 12
+12: 0 N 0x48 317.990723 1952.667114 1855.689575 -0.006804 0.907492 0.420014 "antenna_prox_L" 0 13
+13: 0 N 0x48 132.128296 1213.950928 1889.068848 -0.434583 -0.544633 0.717295 "antenna_prox_R" 0 14
+14: 0 N 0x48 1309.484375 1318.222656 2040.363892 0.804761 -0.259429 -0.533906 "postocciput_ven_C" 0 15
+15: 0 N 0x48 601.359375 2023.011719 1813.044800 -0.449412 0.282973 -0.847322 "anterior_tent_pit_L" 0 16
+16: 0 N 0x48 351.359375 1017.652344 1860.604004 -0.858876 -0.197168 -0.472712 "anterior_tent_pit_R" 0 17
+17: 0 N 0x48 1620.473877 1362.802490 969.937500 0.778942 -0.139777 0.611319 "posterior_tent_pit_L" 0 18
+18: 0 N 0x48 1553.616943 1081.146606 967.812500 0.448270 -0.793814 0.410989 "posterior_tent_pit_R" 0 19
+19: 0 N 0x48 1165.550781 1315.093750 925.609009 0.317196 0.861351 -0.396815 "posterior_tentorial_bridge_ant_C" 0 20
+20: 0 N 0x48 1347.218750 1277.355469 930.200745 0.917824 0.186979 0.350198 "posterior_tentorial_bridge_post_C" 0 21
+
+[SinglePoints]
+NumberOfSinglePoints: 21
+0: 0 0 1
+1: 1 0 2
+2: 2 0 3
+3: 3 0 4
+4: 4 0 5
+5: 5 0 6
+6: 6 0 7
+7: 7 0 8
+8: 8 0 9
+9: 9 0 10
+10: 10 0 11
+11: 11 0 12
+12: 12 0 13
+13: 13 0 14
+14: 14 0 15
+15: 15 0 16
+16: 16 0 17
+17: 17 0 18
+18: 18 0 19
+19: 19 0 20
+20: 20 0 21
+
+[Curves]
+NumberOfCurves: 0
+
+[Patches]
+NumberOfPatches: 0
+
+[Joints]
+NumberOfJoints: 0
+
+[Lengths]
+NumberOfLengths: 0
+
+[Lines]
+NumberOfLines: 0
+
+[Angles]
+NumberOfAngles: 0
+
+[Planes]
+NumberOfPlanes: 0
+
+[Image Stack]
+Units: um
+Spacing: 5.727000 5.727000 5.727000
+NumberOfFiles: 1
+Files: "AV00014_CASENT0741326_Pogonomyrmex barbatus_head_sc68.tif" 
+
+[Contrast and Brightness]
+Width: 122
+Level: -4
+
+[Landmark Size]
+Size: 1
+

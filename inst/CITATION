@@ -1,0 +1,28 @@
+citHeader("To cite forceR in publications use:")
+
+citEntry(entry = "Article",
+  title        = "Juvenile ecology drives adult morphology in two insect orders",
+  author       = personList(as.person("Peter T. Rühr"),
+                   as.person("Thomas van de Kamp"),
+                   as.person("Tomáš Faragó"),
+                   as.person("Jörg U. Hammel"),
+                   as.person("Fabian Wilde"),
+                   as.person("Elena Borisova"),
+                   as.person("Carina Edel"),
+                   as.person("Frenzel Melina"),
+                   as.person("Tilo Baumbach"),
+                   as.person("Alexander Blanke")),
+  journal      = "Proceedings of the Royal Society B: Biological Sciences",
+  year         = "2021",
+  volume       = "288",
+  number       = "1953",
+  pages        = "20210616",
+  url          = "https://royalsocietypublishing.org/doi/full/10.1098/rspb.2021.0616",
+  doi          = "10.1098/rspb.2021.0616"
+
+  textVersion  =
+  paste("Rühr et al. (2022):",
+        "Juvenile ecology drives adult morphology in two insect orders.",
+        "Proceedings of the Royal Society B: Biological Sciences, 288(1953), 20210616.",
+        "doi: 10.1098/rspb.2021.0616")
+)

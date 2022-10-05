@@ -1,0 +1,122 @@
+Version 6
+Stratovan Checkpoint (TM)
+
+[Specimen Information]
+Name: file_neame, .ckpt
+ID: specimen_ID
+Birthdate: 
+Sex: 
+
+[Specimen Study]
+StudyInstanceUID: 
+StudyID: 
+StudyDate: 
+StudyTime: 
+StudyDescription: 
+
+[Specimen Series]
+SeriesInstanceUID: 
+SeriesNumber: 
+SeriesDate: 
+SeriesTime: 
+SeriesModality: 
+SeriesProtocol: 
+SeriesPart: 
+SeriesDescription: 
+
+[Specimen File(s)]
+NumberOfFolders: 1
+Folder: folder_name
+Files: filename
+
+[Surface Information]
+NumberOfSurfaces: 1
+0: -10 "" 200 200 200
+
+[Templates]
+NumberOfTemplates: 1
+0 F1ECC42E-A7F2-4E35-AC7F-3946C4D0B674 0
+ 
+[Landmarks]
+NumberOfPoints: 21
+Units: um
+0: 0 N 0x48 122.024078 355.415619 386.911560 -0.649614 0.330752 -0.684548 "eye_tip_L" 0 1
+1: 0 N 0x48 666.159668 391.172516 572.414551 0.812568 0.541651 -0.215285 "eye_tip_R" 0 2
+2: 0 N 0x48 513.743103 22.409653 385.936096 0.755072 0.003917 0.655630 "mandible_dist_inc_L" 0 3
+3: 0 N 0x48 358.884216 46.826157 372.444458 -0.978881 -0.190475 0.074244 "mandible_dist_inc_R" 0 4
+4: 0 N 0x48 340.098694 661.254761 601.863281 -0.139164 0.924895 0.353839 "head_post_C" 0 5
+5: 0 N 0x48 462.990906 195.224487 313.907257 0.442504 -0.685502 -0.578168 "clypeus_edge_C" 0 6
+6: 0 N 0x48 446.958984 219.515305 320.682007 -0.131035 -0.452769 0.881946 "clypeo_labral_sut_C" 0 7
+7: 0 N 0x48 359.007813 220.685059 313.558594 0.833641 -0.171803 0.524907 "clypeo_labral_sut_L" 0 8
+8: 0 N 0x48 529.625000 230.791992 363.939453 0.110372 0.967630 0.226959 "clypeo_labral_sut_R" 0 9
+9: 0 N 0x48 434.328491 189.085373 396.037170 -0.281294 -0.644166 0.711283 "labrum_C" 0 10
+10: 0 N 0x48 221.302063 199.239273 379.084259 0.006354 -0.995188 -0.097782 "mandible_post_cond_dent_L" 0 11
+11: 0 N 0x48 615.689880 225.651367 512.203735 -0.102291 -0.777224 -0.620854 "mandible_post_cond_dent_R" 0 12
+12: 0 N 0x48 383.363281 271.585205 237.552246 -0.664124 -0.424550 -0.615383 "antenna_prox_L" 0 13
+13: 0 N 0x48 560.780273 285.392761 297.851685 0.952232 -0.155691 0.262707 "antenna_prox_R" 0 14
+14: 0 N 0x48 385.384918 189.590790 536.882568 -0.069385 -0.913913 0.399936 "postocciput_ven_C" 0 15
+15: 0 N 0x48 309.724609 277.656250 308.785156 -0.393746 -0.700549 0.595144 "anterior_tent_pit_L" 0 16
+16: 0 N 0x48 572.782227 290.207031 399.167969 0.694829 -0.111667 0.710452 "anterior_tent_pit_R" 0 17
+17: 0 N 0x48 273.300781 495.093750 628.214844 -0.175440 0.686566 -0.705584 "posterior_tent_pit_L" 0 18
+18: 0 N 0x48 385.355469 504.460938 662.730469 -0.792031 -0.602225 0.100056 "posterior_tent_pit_R" 0 19
+19: 0 N 0x48 348.636719 485.913086 597.027344 -0.716850 0.664914 0.209798 "posterior_tentorial_bridge_ant_C" 0 20
+20: 0 N 0x48 340.634766 497.041260 619.000000 -0.277783 0.890309 0.360813 "posterior_tentorial_bridge_post_C" 0 21
+
+[SinglePoints]
+NumberOfSinglePoints: 21
+0: 0 0 1
+1: 1 0 2
+2: 2 0 3
+3: 3 0 4
+4: 4 0 5
+5: 5 0 6
+6: 6 0 7
+7: 7 0 8
+8: 8 0 9
+9: 9 0 10
+10: 10 0 11
+11: 11 0 12
+12: 12 0 13
+13: 13 0 14
+14: 14 0 15
+15: 15 0 16
+16: 16 0 17
+17: 17 0 18
+18: 18 0 19
+19: 19 0 20
+20: 20 0 21
+
+[Curves]
+NumberOfCurves: 0
+
+[Patches]
+NumberOfPatches: 0
+
+[Joints]
+NumberOfJoints: 0
+
+[Lengths]
+NumberOfLengths: 0
+
+[Lines]
+NumberOfLines: 0
+
+[Angles]
+NumberOfAngles: 0
+
+[Planes]
+NumberOfPlanes: 0
+
+[Image Stack]
+Units: um
+Spacing: 1.424200 1.424200 1.424200
+NumberOfFiles: filename
+Files: filename
+
+[Contrast and Brightness]
+Width: 201
+Level: 7
+
+[Landmark Size]
+Size: 3
+

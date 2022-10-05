@@ -1,0 +1,122 @@
+Version 6
+Stratovan Checkpoint (TM)
+
+[Specimen Information]
+Name: file_neame, .ckpt
+ID: specimen_ID
+Birthdate: 
+Sex: 
+
+[Specimen Study]
+StudyInstanceUID: 
+StudyID: 
+StudyDate: 
+StudyTime: 
+StudyDescription: 
+
+[Specimen Series]
+SeriesInstanceUID: 
+SeriesNumber: 
+SeriesDate: 
+SeriesTime: 
+SeriesModality: 
+SeriesProtocol: 
+SeriesPart: 
+SeriesDescription: 
+
+[Specimen File(s)]
+NumberOfFolders: 1
+Folder: specimen_ID
+Files: "AV00002_Dorymyrmex_insanus_head" 
+
+[Surface Information]
+NumberOfSurfaces: 1
+0: -31 "" 200 200 200
+
+[Templates]
+NumberOfTemplates: 1
+0 F1ECC42E-A7F2-4E35-AC7F-3946C4D0B674 0
+ 
+[Landmarks]
+NumberOfPoints: 21
+Units: um
+0: 0 N 0x48 43.537598 497.824768 703.259949 -0.748897 0.510264 -0.422828 "eye_tip_L" -1 -1
+1: 0 N 0x48 641.099915 630.341431 733.196655 0.726745 0.658621 0.195088 "eye_tip_R" -1 -1
+2: 0 N 0x48 406.570648 109.023743 37.748688 0.563867 0.776209 -0.282051 "mandible_dist_inc_L" -1 -1
+3: 0 N 0x48 473.534424 148.074097 63.459900 -0.573642 0.589541 0.568661 "mandible_dist_inc_R" -1 -1
+4: 0 N 0x48 347.030212 516.396118 1194.876953 -0.163557 0.250379 0.954232 "head_post_C" -1 -1
+5: 0 N 0x48 385.788635 450.282928 331.856934 -0.029061 0.646738 -0.762159 "clypeus_edge_C" -1 -1
+6: 0 N 0x48 395.421936 385.902283 357.478149 0.391546 -0.644852 -0.656398 "clypeo_labral_sut_C" -1 -1
+7: 0 N 0x48 275.510468 352.469574 376.716797 0.616912 -0.784357 -0.064835 "clypeo_labral_sut_L" -1 -1
+8: 0 N 0x48 532.423828 405.894531 390.789063 -0.099210 -0.992554 0.070670 "clypeo_labral_sut_R" -1 -1
+9: 0 N 0x48 412.072845 342.242645 306.254883 0.049301 0.518585 -0.853604 "labrum_C" -1 -1
+10: 0 N 0x48 143.240738 177.326813 479.313599 0.631000 0.225631 -0.742246 "mandible_post_cond_dent_L" -1 -1
+11: 0 N 0x48 707.243774 309.207581 498.070374 0.131221 -0.112043 -0.985001 "mandible_post_cond_dent_R" -1 -1
+12: 0 N 0x48 258.603668 543.394775 436.841125 -0.148484 0.439127 -0.886070 "antenna_prox_L" -1 -1
+13: 0 N 0x48 448.710510 588.010986 446.932220 0.675252 0.439519 -0.592333 "antenna_prox_R" -1 -1
+14: 0 N 0x48 438.054779 158.545898 658.907959 0.151220 -0.975911 0.157257 "postocciput_ven_C" -1 -1
+15: 0 N 0x48 579.167969 487.101563 493.742493 -0.910974 0.276814 -0.305779 "anterior_tent_pit_R" -1 -1
+16: 0 N 0x48 179.355469 396.757813 481.083984 0.699014 0.554642 -0.451388 "anterior_tent_pit_L" -1 -1
+17: 0 N 0x48 451.683594 319.773438 1000.489624 0.960224 0.119816 0.252218 "posterior_tent_pit_R" -1 -1
+18: 0 N 0x48 321.394531 291.867188 997.210693 0.999998 -0.000000 0.002000 "posterior_tent_pit_L" -1 -1
+19: 0 N 0x48 380.132813 367.409180 935.168335 -0.707459 0.179048 -0.683698 "posterior_tentorial_bridge_ant_C" -1 -1
+20: 0 N 0x48 383.718750 347.422852 959.704224 0.110127 -0.315573 0.942489 "posterior_tentorial_bridge_post_C" -1 -1
+
+[SinglePoints]
+NumberOfSinglePoints: 21
+0: 0 0 1
+1: 1 0 2
+2: 2 0 3
+3: 3 0 4
+4: 4 0 5
+5: 5 0 6
+6: 6 0 7
+7: 7 0 8
+8: 8 0 9
+9: 9 0 10
+10: 10 0 11
+11: 11 0 12
+12: 12 0 13
+13: 13 0 14
+14: 14 0 15
+15: 15 0 16
+16: 16 0 17
+17: 17 0 18
+18: 18 0 19
+19: 19 0 20
+20: 20 0 21
+
+[Curves]
+NumberOfCurves: 0
+
+[Patches]
+NumberOfPatches: 0
+
+[Joints]
+NumberOfJoints: 0
+
+[Lengths]
+NumberOfLengths: 0
+
+[Lines]
+NumberOfLines: 0
+
+[Angles]
+NumberOfAngles: 0
+
+[Planes]
+NumberOfPlanes: 0
+
+[Image Stack]
+Units: um
+Spacing: 1.803400 1.803400 1.803400
+NumberOfFiles: 1
+Files: "AV00002_Dorymyrmex_insanus_head_sc72.tif" 
+
+[Contrast and Brightness]
+Width: 241
+Level: -35
+
+[Landmark Size]
+Size: 15
+
