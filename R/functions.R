@@ -31,6 +31,10 @@
 #'
 #' @export
 read.checkpoint <- function(folder, keep.missing = TRUE){
+  # testing
+  folder <- ckpt2r_examples()
+  f=1
+  l=1
   
   file.list <- list.files(folder, pattern = "ckpt", full.names = T)
   
@@ -143,53 +147,57 @@ read.checkpoint <- function(folder, keep.missing = TRUE){
         }
         
         # add landmark name to curves in LMs dataframe and save curve names
-        curve_names <- c()
-        for(c in 1:curve_number){
-          # store current curve line as vector of strings
-          s <- unlist(strsplit(curve_lines[c], " "))
-          
-          # find the line numbers that contrain the curve LM coordinates
-          curve_numbers <- s[4:(length(s)-4)]
-          
-          # filter curve name (= third-last element of the curve line string vector s)
-          curve_name <- s[length(s)-2]
-          curve_names <- c(curve_names, curve_name)
-          # add curve names of current curve to the LM dataframe
-          for(i in 1:length(curve_numbers)){
-            for(r in 1:nrow(LMs)){
-              if(r == curve_numbers[i]){
-                LMs$X11[r+1] <-  curve_name
+        if(length(curve_lines) > 2){
+          curve_names <- c()
+          for(c in 1:curve_number){
+            # store current curve line as vector of strings
+            s <- unlist(strsplit(curve_lines[c], " "))
+            
+            # find the line numbers that contrain the curve LM coordinates
+            curve_numbers <- s[4:(length(s)-4)]
+            
+            # filter curve name (= third-last element of the curve line string vector s)
+            curve_name <- s[length(s)-2]
+            curve_names <- c(curve_names, curve_name)
+            # add curve names of current curve to the LM dataframe
+            for(i in 1:length(curve_numbers)){
+              for(r in 1:nrow(LMs)){
+                if(r == curve_numbers[i]){
+                  LMs$X11[r+1] <-  curve_name
+                }
               }
             }
           }
         }
+        
         # remove \" at beginning and end of LM name
         LMs$X11 <- sub(pattern = "^\\W+(\\w+)\\W+$", replacement = "\\1", LMs$X11) 
-        curve_names <- sub(pattern = "^\\W+(\\w+)\\W+$", replacement = "\\1", curve_names) 
-        
-        # add counter to curve_LMs
-        for(n in 1:length(curve_names)){
-          curr.curve.name <- curve_names[n]
-          line.no.with.curr.curve.name <- length(LMs$X11[LMs$X11==curr.curve.name])
-          LMs$X11[LMs$X11==curr.curve.name] <- paste0(LMs$X11[LMs$X11==curr.curve.name], "_", 1:line.no.with.curr.curve.name)
+        if(length(curve_lines) > 2){
+          curve_names <- sub(pattern = "^\\W+(\\w+)\\W+$", replacement = "\\1", curve_names) 
+          
+          # add counter to curve_LMs
+          for(n in 1:length(curve_names)){
+            curr.curve.name <- curve_names[n]
+            line.no.with.curr.curve.name <- length(LMs$X11[LMs$X11==curr.curve.name])
+            LMs$X11[LMs$X11==curr.curve.name] <- paste0(LMs$X11[LMs$X11==curr.curve.name], "_", 1:line.no.with.curr.curve.name)
+          }
         }
-        
-        # reduce dataset to landmarks that have not been declared missing within Checkpoint (M), but present (N)
-        # present <- LMs[ which(LMs$X3 == 'N'),]
-        present <- LMs
         
         # get X, y, Z coordinate- and landmark name- columns
         landmark.coordinates.and.names <- c(3,5,6,7,11)
         
-        present.df <- as.data.frame(present[,landmark.coordinates.and.names])
-        colnames(present.df) <- c("defined", "X", "Y", "Z", "LM")
+        LMs.df <- as.data.frame(LMs[,landmark.coordinates.and.names])
+        colnames(LMs.df) <- c("defined", "X", "Y", "Z", "LM")
         
-        present.df$file <- curr.specimen
+        LMs.df$file <- curr.specimen
         
+        # reduce dataset to landmarks that have not been declared missing within Checkpoint (M), but present (N)
         if(keep.missing == FALSE){
-          no.LM.M <- sum(present.df$defined=="M")
+          no.LM.M <- sum(LMs.df$defined=="M")
           print(paste0("Removing ", no.LM.M, " landmarks defined as missing from ", curr.specimen, "..."))
-          present.df <- present.df[present.df$defined!="M",]
+          present.df <- LMs.df[LMs.df$defined!="M",]
+        } else{
+          present.df <- LMs.df
         }
         
         # convert LM names and coordinates into dataframe and store as list element within landmark_list at index landmark_list_counter
@@ -336,8 +344,8 @@ array.2D.from.LM.list <- function(LM.list,
 #' 
 #' @export
 ckpt2r_examples <- function(){
-    path <- system.file("extdata", "example_files",
-                        package = "ckpt2r",
-                        mustWork = TRUE)
+  path <- system.file("extdata", "example_files",
+                      package = "ckpt2r",
+                      mustWork = TRUE)
   return(path)
 }
