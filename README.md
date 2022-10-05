@@ -136,7 +136,7 @@ text(pca.results.uncorr$x[, 1:2], labels = rownames(pca.results.uncorr$x),
 # History
 * v.2-0-0 (2022-10-05)
   * changed scripts into package
-  * renamed `array_2D_from_LM_list()` to `array_2D_from_LM_list()`
+  * renamed `array.2D.from.LM.list()` to `array_2D_from_LM_list()`
   * reworked example code
   * added example files
   * added `ckpt2r_examples()` function
