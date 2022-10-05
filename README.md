@@ -8,7 +8,7 @@ R package to import [Stratovan Checkpoint](https://www.stratovan.com/products/ch
   * **X, Y, Z:** x-, y- and z-coordinates of landmarks
   * **LM:** names of landmarks
   * **file:** name the file that the list element was generated from
-* `array_2D_from_LM_list()` converts a set of landmarks loaded with `read_checkpoint()` into a 2D array which can then e.g. be used via `geomorph` or `mvMORPH` for geometric morphometrics analyes. The resulting data.frame will have the following dimensions: n.specimens x  n.landmarks*n.dimensions.
+* `array_2D_from_LM_list()` converts a set of landmarks loaded with `read_checkpoint()` into a 2D array which can then e.g. be used via [`geomorph`](https://cran.r-project.org/web/packages/geomorph/index.html) or [`mvMORPH`](https://cran.r-project.org/web/packages/mvMORPH/index.html) for geometric morphometrics analyses. The resulting data.frame will have the following dimensions: n.specimens x  n.landmarks*n.dimensions.
   * `remove_NAs = TRUE` will remove all landmarks that have missing coordinate values in at least one specimen.
   * `verbose = TRUE` informs the user if and which landmarks have beeen removed from the dataset in case `remove_NAs = TRUE`.
 
