@@ -1,5 +1,7 @@
 # Checkpoint importer for R
 
+R package to import [Stratovan Checkpoint](https://www.stratovan.com/products/checkpoint) files (*.ckpt) directly into R.
+
 ## Info
 * `read.checkpoint()` imports landmarks from Stratovan Checkpoint files (*.ckpt) [1] into R[2] so that the Export-step within Checkpoint can be skipped. Returned will be a list of which each list element consists of a dataframe with the collowing columns:
   * **defined:** missing (`M`) or present (`N`), as defined within Checkpoint. When `keep.missing = FALSE`, landmarks with the label `M` will be removed.
@@ -13,16 +15,17 @@
 Note that the old link `https://github.com/Peter-T-Ruehr/checkpoint_importer_for_R` links to this page.
 
 ## Installation
-Use the command `devtools::install_github('https://github.com/Peter-T-Ruehr/chkpt2r')` to install `ckpt2r` package directly from its [GitHub page](https://github.com/Peter-T-Ruehr/chkpt2r).
+Use the command `devtools::install_github('https://github.com/Peter-T-Ruehr/chkpt2r')` to install the `ckpt2r` package directly from its [GitHub page](https://github.com/Peter-T-Ruehr/chkpt2r).
+
+## Issues
+If you have trouble with the package, please raisean issue [here](https://github.com/Peter-T-Ruehr/checkpoint_importer_for_R/issues) and I will try to solve it as soon as I can.
 
 ## Citation
 Please cite the following paper when you use these functions:
 
 Rühr et al. (2021): Juvenile ecology drives adult morphology in two insect orders. Proceedings of the Royal Society B 288: 20210616. https://doi.org/10.1098/rspb.2021.0616
 
-If you have issues, please raise them [here](https://github.com/Peter-T-Ruehr/checkpoint_importer_for_R/issues) and I will try to solve them as son as I can.
-
-References:
+### References:
 
 [1] Stratovan Corporation, Davis, CA. https://www.stratovan.com/
 
