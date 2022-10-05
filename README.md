@@ -3,12 +3,12 @@
 R package to import [Stratovan Checkpoint](https://www.stratovan.com/products/checkpoint) files (*.ckpt) directly into R.
 
 ## Info
-* `read.checkpoint()` imports landmarks from Stratovan Checkpoint files (*.ckpt) [1] into R[2] so that the Export-step within Checkpoint can be skipped. Returned will be a list of which each list element consists of a dataframe with the collowing columns:
+* `read_checkpoint()` imports landmarks from Stratovan Checkpoint files (*.ckpt) [1] into R[2] so that the Export-step within Checkpoint can be skipped. Returned will be a list of which each list element consists of a dataframe with the collowing columns:
   * **defined:** missing (`M`) or present (`N`), as defined within Checkpoint. When `keep.missing = FALSE`, landmarks with the label `M` will be removed.
   * **X, Y, Z:** x-, y- and z-coordinates of landmarks
   * **LM:** names of landmarks
   * **file:** name the file that the list element was generated from
-* `array_2D_from_LM_list()` converts a set of landmarks loaded with `read.checkpoint()` into a 2D array which can then e.g. be converted into a 3D array via `geomorph::arrayspecs()`. The resulting data.frame will have the following dinemsions: n.specimens x  n.landmarks*n.dimensions.
+* `array_2D_from_LM_list()` converts a set of landmarks loaded with `read_checkpoint()` into a 2D array which can then e.g. be converted into a 3D array via `geomorph::arrayspecs()`. The resulting data.frame will have the following dinemsions: n.specimens x  n.landmarks*n.dimensions.
   * `remove_NAs = TRUE` will remove all landmarks that have missing coordinate values in at least one specimen.
   * `verbose = TRUE` informs the user if and which landmarks have beeen removed from the dataset in case `remove_NAs = TRUE`.
 
@@ -41,7 +41,7 @@ library(ckpt2r)
 
 # read landmark files from folder
 folder.with.landmarks <- ckpt2r_examples()
-LM.list <- read.checkpoint(folder.with.landmarks,
+LM.list <- read_checkpoint(folder.with.landmarks,
                            keep.missing = TRUE)
 
 print(LM.list)
@@ -67,13 +67,13 @@ gpa.results <- gpagen(array.3D)
 # !!! if this returned:
 #   Error in gpagen(array.3D) : 
 #     Data matrix contains missing values. Estimate these first (see 'estimate.missing').
-# !!! then use keep.missing = TRUE in read.checkpoint) and
+# !!! then use keep.missing = TRUE in read_checkpoint) and
 # !!! remove_NAs = TRUE in array_2D_from_LM_list() to remove landmarks with missing data.
 # !!! In our case, specimen_0001 has the landmarks 'antenna_prox_L' and 'antenna_prox_L'
 # !!! marked as missing:
 
 # read landmark files from folder
-LM.list <- read.checkpoint(folder.with.landmarks,
+LM.list <- read_checkpoint(folder.with.landmarks,
                            keep.missing = FALSE)
 # landmarks 'antenna_prox_L' and 'antenna_prox_L' were removed from specimen_0001.
 
@@ -136,6 +136,7 @@ text(pca.results.uncorr$x[, 1:2], labels = rownames(pca.results.uncorr$x),
 # History
 * v.2-0-0 (2022-10-05)
   * changed scripts into package
+  * renamed `read.checkpoint()` to `read_checkpoint()`
   * renamed `array.2D.from.LM.list()` to `array_2D_from_LM_list()`
   * reworked example code
   * added example files

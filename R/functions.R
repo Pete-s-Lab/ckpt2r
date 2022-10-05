@@ -24,13 +24,13 @@
 #' @examples
 #' # read landmark files
 #' folder.with.landmarks <- ckpt2r_examples()
-#' LM.list <- read.checkpoint(folder.with.landmarks,
+#' LM.list <- read_checkpoint(folder.with.landmarks,
 #'                            keep.missing = FALSE)
 #'                            
 #' print(LM.list)
 #'
 #' @export
-read.checkpoint <- function(folder, keep.missing = TRUE){
+read_checkpoint <- function(folder, keep.missing = TRUE){
   # testing
   folder <- ckpt2r_examples()
   f=1
@@ -212,7 +212,7 @@ read.checkpoint <- function(folder, keep.missing = TRUE){
 
 #' Convert landmark list to table
 #' 
-#' Converts a landmark list loaded with `read.checkpoint()` to table (2D array).
+#' Converts a landmark list loaded with `read_checkpoint()` to table (2D array).
 #'
 #' @param remove_NAs remove landmarks that are missing in at least one specimen 
 #' from the whole dataset. Default: `TRUE`.
@@ -227,7 +227,7 @@ read.checkpoint <- function(folder, keep.missing = TRUE){
 #' @examples
 #' # read landmark files
 #' folder.with.landmarks <- ckpt2r_examples()
-#' LM.list <- read.checkpoint(folder.with.landmarks,
+#' LM.list <- read_checkpoint(folder.with.landmarks,
 #'                            keep.missing = FALSE)
 #'                            
 #' print(LM.list)
