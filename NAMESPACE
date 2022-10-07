@@ -2,4 +2,4 @@
 
 export(array_2D_from_LM_list)
 export(ckpt2r_examples)
-export(read.checkpoint)
+export(read_checkpoint)
