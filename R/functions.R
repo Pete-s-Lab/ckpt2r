@@ -31,10 +31,10 @@
 #'
 #' @export
 read_checkpoint <- function(folder, keep.missing = TRUE){
-  # testing
-  folder <- ckpt2r_examples()
-  f=1
-  l=1
+  # # testing
+  # folder <- ckpt2r_examples()
+  # f=1
+  # l=1
   
   file.list <- list.files(folder, pattern = "ckpt", full.names = T)
   
