@@ -15,7 +15,7 @@ R package to import [Stratovan Checkpoint](https://www.stratovan.com/products/ch
 Note that the old link `https://github.com/Peter-T-Ruehr/checkpoint_importer_for_R` links to this page.
 
 ## Installation
-Use the command `devtools::install_github('https://github.com/Peter-T-Ruehr/chkpt2r')` to install the `ckpt2r` package directly from its [GitHub page](https://github.com/Peter-T-Ruehr/chkpt2r).
+Use the command `devtools::install_github('https://github.com/Peter-T-Ruehr/ckpt2r')` to install the `ckpt2r` package directly from its [GitHub page](https://github.com/Peter-T-Ruehr/ckpt2r).
 
 ## Issues
 If you have trouble with the package, please raise an issue [here](https://github.com/Peter-T-Ruehr/checkpoint_importer_for_R/issues) and I will try to solve it as soon as I can.
@@ -34,7 +34,7 @@ Rühr et al. (2021): Juvenile ecology drives adult morphology in two insect orde
 # Example R code
 ```
 # if not already done, install ckpt2r
-devtools::install_github('https://github.com/Peter-T-Ruehr/chkpt2r')
+devtools::install_github('https://github.com/Peter-T-Ruehr/ckpt2r')
 
 # load ckpt2r
 library(ckpt2r)
@@ -134,6 +134,9 @@ text(pca.results$x[, 1:2], labels = rownames(pca.results$x),
 ```
 
 # History
+* v.2-1-0 (2022-10-07)
+  * changed package name from `chkpt2r` to `ckpt2r` to reflect actual Checkpoint file names
+  * changed readme and example code accordingly
 * v.2-0-0 (2022-10-05)
   * changed scripts into package
   * renamed `read.checkpoint()` to `read_checkpoint()`
