@@ -19,12 +19,12 @@ The resulting data.frame will have the following dimensions:
 data came from.
 }
 \description{
-Converts a landmark list loaded with \code{read.checkpoint()} to table (2D array).
+Converts a landmark list loaded with \code{read_checkpoint()} to table (2D array).
 }
 \examples{
 # read landmark files
 folder.with.landmarks <- ckpt2r_examples()
-LM.list <- read.checkpoint(folder.with.landmarks,
+LM.list <- read_checkpoint(folder.with.landmarks,
                            keep.missing = FALSE)
                            
 print(LM.list)
