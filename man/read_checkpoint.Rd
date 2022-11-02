@@ -4,25 +4,27 @@
 \alias{read_checkpoint}
 \title{Read Checkpoint files from folder}
 \usage{
-read_checkpoint(folder, pattern = NULL, recursive = FALSE, keep.missing = TRUE)
+read_checkpoint(folder, pattern = NULL, recursive = TRUE)
 }
 \arguments{
 \item{folder}{A character string with the path to the Checkpoint files
 (*.ckpt).}
 
-\item{keep.missing}{If \code{FALSE}, landmarks marked as missing within
-Checkpoint are removed, no matter if they are defined or not (i.e. no matter
-if there are coordinate values present). Default: \code{FALSE}.}
+\item{pattern}{Character string defining pattern that should be part of file
+file names that the functions should consider. Default \code{NULL}.}
+
+\item{recursive}{Logical value defininf if function should consider
+subfolders (\code{TRUE}) or not (\code{FALSE}). Default: \code{FALSE}.}
 }
 \value{
-Returns a list of which each list element consists of a dataframe
-with the collowing columns:\cr
+Returns a tibble containing the following columns:\cr
 \cr
 
-| \strong{\code{defined}} |   | missing (M) or present (N), as defined within Checkpoint. When keep.missing = FALSE, landmarks with the label M will be removed. |
-| \strong{\verb{X, Y, Z}} |  | x-, y- and z-coordinates of landmarks |
+| \strong{\code{file_name}} |   | name of the file that the list element was generated from |
 | \strong{\code{LM}} |   | names of landmarks |
-| \strong{\code{file}} |   | name of the file that the list element was generated from |
+| \strong{\verb{X, Y, Z}} |  | x-, y- and z-coordinates of landmarks |
+| \strong{\code{defined}} |   | missing (M) or present (N), as defined within
+Checkpoint or (O) when not defined at all but present in other files.|
 }
 \description{
 Allows reading Checkpoint files (*.ckpt) directly into R so that the
@@ -34,9 +36,8 @@ So far, only point and curve landmarks are supported.
 \examples{
 # read landmark files
 folder.with.landmarks <- ckpt2r_examples()
-LM.list <- read_checkpoint(folder.with.landmarks,
-                           keep.missing = FALSE)
+LM_list <- read_checkpoint(folder.with.landmarks)
                            
-print(LM.list)
+print(LM_list)
 
 }

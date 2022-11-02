@@ -11,7 +11,8 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
 Imports: 
 Depends: 
-    R (>= 4.0)
+    R (>= 4.0),
+    dplyr
 VignetteBuilder: knitr
 Suggests: 
 	knitr,
