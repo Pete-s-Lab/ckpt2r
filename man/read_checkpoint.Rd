@@ -4,7 +4,7 @@
 \alias{read_checkpoint}
 \title{Read Checkpoint files from folder}
 \usage{
-read_checkpoint(folder, keep.missing = TRUE)
+read_checkpoint(folder, pattern = NULL, recursive = FALSE, keep.missing = TRUE)
 }
 \arguments{
 \item{folder}{A character string with the path to the Checkpoint files

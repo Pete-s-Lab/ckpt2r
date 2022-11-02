@@ -11,6 +11,12 @@
 #' @param keep.missing If `FALSE`, landmarks marked as missing within 
 #' Checkpoint are removed, no matter if they are defined or not (i.e. no matter
 #' if there are coordinate values present). Default: `FALSE`.
+#' 
+#' @param pattern Character string defining pattern that should be part of file 
+#' file names that the functions should consider. Default `NULL`. 
+#' 
+#' @param recursive Logical value defininf if function should consider 
+#' subfolders (`TRUE`) or not (`FALSE`). Default: `FALSE`.
 #'
 #' @return Returns a list of which each list element consists of a dataframe 
 #' with the collowing columns:\cr
@@ -30,13 +36,27 @@
 #' print(LM.list)
 #'
 #' @export
-read_checkpoint <- function(folder, keep.missing = TRUE){
+read_checkpoint <- function(folder, 
+                            pattern = NULL,
+                            recursive = FALSE,
+                            keep.missing = TRUE){
   # # testing
   # folder <- ckpt2r_examples()
+  # pattern = NULL
+  # pattern = "0007"
+  # recursive = FALSE
+  # keep.missing = TRUE
   # f=1
   # l=1
   
-  file.list <- list.files(folder, pattern = "ckpt", full.names = T)
+  file.list <- list.files(folder, pattern = "ckpt", 
+                          full.names = TRUE,
+                          recursive = recursive)
+  
+  # filter out files with pattern
+  if(!is.null(pattern)){
+    file.list <- file.list[grepl(pattern, file.list)]
+  }
   
   # create list that stores dataframes of the LM names and coordinats
   landmark_list <- list()
