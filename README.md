@@ -39,10 +39,12 @@ devtools::install_github('https://github.com/Peter-T-Ruehr/ckpt2r')
 # load ckpt2r
 library(ckpt2r)
 
-# read landmark files from folder
+# read all landmark files from folder without considering potential subfolders.
 folder.with.landmarks <- ckpt2r_examples()
 LM.list <- read_checkpoint(folder.with.landmarks,
-                           keep.missing = TRUE)
+                           keep.missing = TRUE,
+                           recursive = FALSE,
+                           pattern = NULL)
 
 print(LM.list)
 
