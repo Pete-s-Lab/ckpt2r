@@ -1,4 +1,4 @@
-# ckpt2r: Checkpoint importer for R
+# ckpt2r: Checkpoint importer for R (v.3-0-0)
 
 R package to import [Stratovan Checkpoint](https://www.stratovan.com/products/checkpoint) landmark files (*.ckpt) directly into R.
 
@@ -36,24 +36,49 @@ Rühr et al. (2021): Juvenile ecology drives adult morphology in two insect orde
 # if not already done, install ckpt2r
 devtools::install_github('https://github.com/Peter-T-Ruehr/ckpt2r')
 
+remove.packages("ckpt2r")
+
 # load ckpt2r
 library(ckpt2r)
 
 # read all landmark files from folder without considering potential subfolders.
 folder.with.landmarks <- ckpt2r_examples()
-LM.list <- read_checkpoint(folder.with.landmarks,
-                           keep.missing = TRUE,
-                           recursive = FALSE,
-                           pattern = NULL)
+landmarks_df <- read_checkpoint(folder.with.landmarks,
+                                recursive = FALSE,
+                                pattern = NULL)
 
-print(LM.list)
+print(landmarks_df)
 
-# convert LM.list to 2D array
-array_2D <- array_2D_from_LM_list(LM.list = LM.list,
-                                  remove_NAs = FALSE)
+# We have several two landmarks 'antenna_prox_L' and 'antenna_prox_R' marked as 
+# missing (defined = N). So let's remove these landmark lines:
+landmarks_df <- landmarks_df[landmarks_df$defined != "M",]
+
+# now we will convert the table into an array 2D
+array_2D <- array_2D_from_df(df, 
+                             LM_column = "LM",
+                             specimen_column = "file_name",
+                             X_column = "X",
+                             Y_column = "Y",
+                             Z_column = "Z")
+
+# In our case, we have several landmarks that are not defined for all 
+# species. Keeping these in the array_2D may cause problems in downstream
+# analyses. So let's remove all landmarks that contain NA values
+array_2D <- array_2D[, - which(colSums(is.na(array_2D)) > 0)]
+
+
+# convert array_2D to data.frame, add column names and remove specimen column
+array_2D <- as.data.frame(array_2D)
+rownames(array_2D) <- array_2D$specimen
+array_2D$specimen <- NULL
+
 dim(array_2D)
 #  returns: n.specimens,  n.landmarks*n.dimensions
-#  in the example file case: (15, 69 [=23*3])
+#  in the example file case: (15, 51 [=17*3])
+
+# get names of landmarks that are still in array_2D
+LMs_present = unique(gsub("_\\w{1}$", "", colnames(array_2D)))
+print(LMs_present)
 
 # turn 2D array into 3D array
 require(geomorph)
@@ -63,54 +88,20 @@ array.3D <- arrayspecs(A = array_2D,
                        sep = ".") 
 dim(array.3D)
 # n.landmarks, n.dimenions, specimens
-#  in the example file case: (23, 3, 15)
+#  in the example file case: (17, 3, 15)
 
 # Procrustes alignment
 gpa.results <- gpagen(array.3D)
 # !!! if this returned:
 #   Error in gpagen(array.3D) : 
 #     Data matrix contains missing values. Estimate these first (see 'estimate.missing').
-# !!! then use keep.missing = TRUE in read_checkpoint) and
-# !!! remove_NAs = TRUE in array_2D_from_LM_list() to remove landmarks with missing data.
-# !!! In our case, specimen_0001 has the landmarks 'antenna_prox_L' and 'antenna_prox_L'
-# !!! marked as missing:
-
-# read landmark files from folder
-LM.list <- read_checkpoint(folder.with.landmarks,
-                           keep.missing = FALSE)
-# landmarks 'antenna_prox_L' and 'antenna_prox_L' were removed from specimen_0001.
-
-# convert LM.list to 2D array and remove landmarks with missing data
-array_2D <- array_2D_from_LM_list(LM.list = LM.list,
-                                  remove_NAs = TRUE,
-                                  verbose = TRUE)
-# if verbose = TRUE, this returns warning message with info on which landmarks were removed.
-# In our case, six landmarks were missing in at least one of the specimens and were
-# thus removed.
-# Of course, you can also load all landmarks and filter them yourself instead letting
-# ckpt2r to it for more control.
-
-# get all landmarks that are still present in the dataset
-LMs_present <- unique(sub("_[^_]+$", "", colnames(array_2D)))
-
-dim(array_2D)
-#   returns: 15 specimens and 17 landmarks (23-6) in 3 dimensions
-
-# turn 2D array into 3D array again
-array.3D <- arrayspecs(A = array_2D,
-                       p = (ncol(array_2D)/3),
-                       k = 3, 
-                       sep = ".")
-dim(array.3D)
-
-# Procrustes alignment
-gpa.results <- gpagen(array.3D)
+# !!! then check if you still have NA values in your array 2D.
 
 # this should be fine now
 summary(gpa.results$coords)
 
 # plot all LM points of all specimens
-for(i in 1:length(LM.list)){
+for(i in 1:length(landmarks_df)){
   if(i == 1){
     plot(gpa.results$coords[,,i], pch = 16, cex = 0.5, col="gray80")
   } else {
@@ -136,18 +127,22 @@ text(pca.results$x[, 1:2], labels = rownames(pca.results$x),
 ```
 
 # History
+* v.3-0-0 (2022-11-03)
+  * total re-write of code
+    * read_checkpoint() returns data frame now
+    * replaced array_2D_from_LM_list() with array_2D_from_df() accordingly
 * v.2-1-0 (2022-10-07)
   * changed package name from `chkpt2r` to `ckpt2r` to reflect actual Checkpoint file names
   * changed readme and example code accordingly
 * v.2-0-0 (2022-10-05)
   * changed scripts into package
   * renamed `read.checkpoint()` to `read_checkpoint()`
-  * renamed `array.2D.from.LM.list()` to `array_2D_from_LM_list()`
+  * renamed `array.2D.from.LM_list()` to `array_2D_from_LM_list()`
   * reworked example code
   * added example files
   * added `ckpt2r_examples()` function
 * v.1-1-0 (2022-10-04)
-  * added `array.2D.from.LM.list()` (after request from Christy Anna Hipsley)
+  * added `array.2D.from.LM_list()` (after request from Christy Anna Hipsley)
   * added example R code to Readme file
 * v.1-0-0 (2021)
   * [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5482977.svg)](https://doi.org/10.5281/zenodo.5482977)
