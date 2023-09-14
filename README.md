@@ -48,11 +48,11 @@ landmarks_df <- read_checkpoint(folder.with.landmarks,
 print(landmarks_df)
 
 # We have several two landmarks 'antenna_prox_L' and 'antenna_prox_R' marked as 
-# missing (defined = N). So let's remove these landmark lines:
+#   missing (defined = M). So let's remove these landmark lines:
 landmarks_df <- landmarks_df[landmarks_df$defined != "M",]
 
 # now we will convert the table into an array 2D
-array_2D <- array_2D_from_df(df, 
+array_2D <- array_2D_from_df(landmarks_df, 
                              LM_column = "LM",
                              specimen_column = "file_name",
                              X_column = "X",
