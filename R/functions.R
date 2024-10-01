@@ -39,12 +39,17 @@ read_checkpoint <- function(folder,
   
   # # testing
   # folder <- ckpt2r_examples()
+  folder <- curr_folder
   # pattern = NULL
   # pattern = "0007"
   # recursive = FALSE
   # f=1
   # l=1
   require(dplyr)
+  
+  if(is.null(pattern)){
+    pattern <- "\\.ckpt"
+  }
   
   file.list.all <- list.files(folder, 
                               pattern = "\\.ckpt", 
@@ -55,7 +60,7 @@ read_checkpoint <- function(folder,
   if(!is.null(pattern)){
     file.list <- file.list.all[grepl(pattern, file.list.all)]
     print(paste0("Found ", length(file.list.all), " Checkpoint files of which ",
-                                                                          length(file.list), " file(s) fit the pattern ", pattern, "."))
+                 length(file.list), " file(s) fit the pattern ", pattern, "."))
   } else{
     file.list <- file.list.all
     print(paste0("Found ", length(file.list.all), " Checkpoint files."))
@@ -217,7 +222,7 @@ read_checkpoint <- function(folder,
         colnames(present.df) <- c("defined", "X", "Y", "Z", "LM")
         
         present.df$file_name <- curr.specimen
-
+        
         # convert LM names and coordinates into dataframe and store as list element within landmark_list at index landmark_list_counter
         landmark_list[[landmark_list_counter]] <- present.df
         
@@ -235,28 +240,31 @@ read_checkpoint <- function(folder,
   
   landmark = all_landmarks[1] # 21
   filename = all_files[1]
-  for(landmark in all_landmarks){
-    for(filename in all_files){
-      check <- landmark_df %>% 
-        filter(LM == landmark & file_name == filename) %>% 
-        nrow()
-      if(check == 0){
-        landmark_df <- landmark_df %>% 
-          add_row(defined = "O",
-                  X = NA,
-                  Y = NA,
-                  Z = NA,
-                  LM = landmark,
-                  file_name = filename)
+  if(!is.null(all_files)){
+    for(landmark in all_landmarks){
+      for(filename in all_files){
+        check <- landmark_df %>% 
+          filter(LM == landmark & file_name == filename) %>% 
+          nrow()
+        if(check == 0){
+          landmark_df <- landmark_df %>% 
+            add_row(defined = "O",
+                    X = NA,
+                    Y = NA,
+                    Z = NA,
+                    LM = landmark,
+                    file_name = filename)
+        }
       }
     }
+    landmark_df <- landmark_df %>% 
+      arrange(file_name, LM) %>% 
+      select(file_name, LM, X, Y, Z, defined)
   }
-  landmark_df <- landmark_df %>% 
-    arrange(file_name, LM) %>% 
-    select(file_name, LM, X, Y, Z, defined)
   
   print("done!")
   return(landmark_df)
+}
   
   # file.list <- list.files(folder, pattern = "ckpt", 
   #                         full.names = TRUE,
