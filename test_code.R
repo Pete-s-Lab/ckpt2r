@@ -19,7 +19,7 @@ print(landmarks_df)
 landmarks_df <- landmarks_df[landmarks_df$defined != "M",]
 
 # now we will convert the table into an array 2D
-array_2D <- array_2D_from_df(landmarks_df, 
+array_2D <- array_2D_from_df(df = landmarks_df, 
                              LM_column = "LM",
                              specimen_column = "file_name",
                              X_column = "X",
